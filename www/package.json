@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "main": "index.html",
   "license": "MIT",
+  "scripts":{
+    "rollup":"rollup -c "
+  },
   "dependencies": {
     "@fontsource/jetbrains-mono": "4.5.10",
     "animate.css": "^4.1.1",
     "lucide-static": "^0.548.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "pp-is": "^1.2.7"
   }
 }

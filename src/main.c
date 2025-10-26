@@ -77,63 +77,7 @@ static void print_hello (GtkWidget *widget, gpointer   data){
   g_print ("Hello World\n");
 }
 
-static void activate(GtkApplication *app, gpointer user_data) {
-    WebKitWebView *web_view;
-    WebKitWebContext *web_view_context; 
-    WebKitUserContentManager *web_view_manager;
-    GtkWidget *window;
-    GtkBuilder *builder;
-    
-    // Cargar el UI desde recursos
-    builder = gtk_builder_new_from_resource("/webview.ui");
-    window = GTK_WIDGET(gtk_builder_get_object(builder, "window"));
-    gtk_window_set_application(GTK_WINDOW(window), app);
-    
-    // Crear el WebView (igual que antes)
-    web_view_manager = webkit_user_content_manager_new();    
-    
-    webkit_user_content_manager_register_script_message_handler( 
-        web_view_manager,
-        "ready",
-        NULL
-    );
-    
-    web_view_context = webkit_web_context_new();
-    
-    webkit_web_context_register_uri_scheme(
-        web_view_context,
-        "app",
-        custom_scheme_handler,
-        NULL, NULL
-    );
-    
-    web_view = WEBKIT_WEB_VIEW(
-        g_object_new(
-            WEBKIT_TYPE_WEB_VIEW,
-            "user-content-manager", web_view_manager,
-            "web-context", web_view_context,
-            NULL
-        )
-    );
-    
-    g_signal_connect(
-        web_view_manager,
-        "script-message-received::ready",
-        G_CALLBACK(on_ready),
-        web_view
-    );
-    
-    // Añadir el webview a la ventana
-    gtk_window_set_child(GTK_WINDOW(window), GTK_WIDGET(web_view));
-    gtk_widget_set_visible(GTK_WIDGET(web_view), FALSE);
-    
-    webkit_web_view_load_uri(web_view, "app://index.html");
-    gtk_window_present(GTK_WINDOW(window));
-    
-    g_object_unref(builder);
-}
-
-static void activatea (GtkApplication *app,gpointer user_data){
+static void activate(GtkApplication *app,gpointer user_data){
 
   WebKitWebView                    *web_view;
   WebKitWebContext        * web_view_context; 
@@ -183,12 +127,10 @@ static void activatea (GtkApplication *app,gpointer user_data){
     web_view
   );
 
-
   gtk_window_set_child(GTK_WINDOW(window),GTK_WIDGET(web_view));
   gtk_widget_set_visible(GTK_WIDGET(web_view),FALSE);
   webkit_web_view_load_uri(web_view,"app://index.html");
   gtk_window_present(GTK_WINDOW(window));
-
 
 }
 

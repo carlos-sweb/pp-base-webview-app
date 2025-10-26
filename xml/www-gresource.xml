@@ -23,23 +23,15 @@
     <file compressed="true" alias="lucide.woff2" >node_modules/lucide-static/font/lucide.woff2</file>
     <file compressed="true" alias="lucide.ttf" >node_modules/lucide-static/font/lucide.ttf</file>
   </gresource>
-  <gresource prefix="/">
-
-    <file compressed="true">webview.ui</file>
-    
+  <gresource prefix="/">    
     <file compressed="true">index.html</file>
     <file compressed="true" >js/ready.js</file>
     <file compressed="true" >js/index.js</file>
+    <file compressed="true" >js/bundle.js</file>
 
-  
     <file compressed="true" alias="normalize.css" >node_modules/normalize.css/normalize.css</file>
-    <file compressed="true" alias="animate.css" >node_modules/animate.css/animate.css</file>
-
-   
-   
+    <file compressed="true" alias="animate.css" >node_modules/animate.css/animate.css</file>   
     <file compressed="true">css-utility/dist/master.css</file>
-
-      
     <file compressed="true">css-utility/dist/category/alignment.min.css</file>
     <file compressed="true">css-utility/dist/category/backgrounds.min.css</file>
     <file compressed="true">css-utility/dist/category/bgcolor.min.css</file>
@@ -55,5 +47,5 @@
     <file compressed="true">css-utility/dist/category/transforms.min.css</file>
     <file compressed="true">css-utility/dist/category/typography.min.css</file>
     <file compressed="true"  >css/style.css</file>
-  </gresource>
+  </gresource>  
 </gresources>
