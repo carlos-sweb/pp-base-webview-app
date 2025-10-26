@@ -495,11 +495,6 @@
                 "n"
             ]
         },
-        "darkslategrey": {
-            "screens": [
-                "n"
-            ]
-        },
         "darkturquoise": {
             "screens": [
                 "n"
@@ -661,11 +656,6 @@
             ]
         },
         "dimgray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "dimgrey": {
             "screens": [
                 "n"
             ]
@@ -1171,11 +1161,6 @@
             ]
         },
         "lightslategray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "lightslategrey": {
             "screens": [
                 "n"
             ]

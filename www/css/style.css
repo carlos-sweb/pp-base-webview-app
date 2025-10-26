@@ -1,2 +1,8 @@
 body{font-family: "JetBrains Mono";}
+*{
+user-select: none;
+-ms-user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}	
 	

@@ -1,5 +1,5 @@
 {
-    "normalize": true,
+    "normalize": false,
     "categories": [
         "alignment",
         "backgrounds",

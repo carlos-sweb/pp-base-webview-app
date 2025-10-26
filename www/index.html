@@ -13,9 +13,36 @@
 
 	<script src="js/ready.js"></script>
 </head>
-<body>	
-	<h1 id="title" class="text-red800 lowercase pl-5" >Hola a todos</h1>
-	<h3 id="text"></h3>
+<body style="background:#eee;">	
+	
+<div style="display:grid;grid-template-columns:repeat(24, 1fr);">
+	<div style="grid-area:1 / 1 / 1 / 7;" id="menu" class="p-2 gray300 border-right-solid border border-right-bluegray100">
+
+<!--<div>
+<button onclick="drawer.open()" >Open Drawer</button>
+<br>
+<br>
+</div>-->
+  <!--<i data-lucide="volume-2" class="text-red500"></i>
+  <i data-lucide="x"></i>
+  <i data-lucide="menu"></i>-->
+
+
+<div class="w-full flex flex-col flex-wrap">
+<p class="font-bold text-center" style="font-size:36px;background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;">pP Templates</p>
+<input placeholder="Search" autocomplete="off" name="username" 
+class="outline-none appearance-none rounded border-solid border-gray400 border border-solid h-7 pt-1 pb-1 pl-2 pr-2 focus:border focus:border-deeppurple400 focus:shadow-around-deeppurple300 text-bluegray900 transition-duration-200 transition-property-all transition-timing-ease" type="text"></div><div class="flex p-4 gray300 font-bold text-deeppurple900 capitalize cursor-normal">element</div><div class="gray100 mb-4 shadow rounded-xl">
+
+	<div data-link="element/block" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-red300">&nbsp;block</div>
+
+	<div data-link="element/box" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;box</div><div data-link="element/button" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;button</div><div data-link="element/content" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;content</div><div data-link="element/delete" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;delete</div><div data-link="element/icons" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;icons</div><div data-link="element/image" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;image</div><div data-link="element/tag" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;tag</div><div data-link="element/title" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;title</div></div><div class="flex p-4 gray300 font-bold text-deeppurple900 capitalize cursor-normal">components</div><div class="gray100 mb-4 shadow rounded-xl"><div data-link="components/card" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;card</div><div data-link="components/dropdown" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;dropdown</div><div data-link="components/menu" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;menu</div><div data-link="components/message" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;message</div><div data-link="components/modal" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;modal</div><div data-link="components/navbar" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;navbar</div><div data-link="components/pagination" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;pagination</div></div><div class="flex p-4 gray300 font-bold text-deeppurple900 capitalize cursor-normal">form</div><div class="gray100 mb-4 shadow rounded-xl"><div data-link="form/general" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;general</div><div data-link="form/input" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;input</div><div data-link="form/textarea" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;textarea</div><div data-link="form/select" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;select</div><div data-link="form/checkbox" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;checkbox</div><div data-link="form/radio" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;radio</div><div data-link="form/file" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;file</div></div><div class="flex p-4 gray300 font-bold text-deeppurple900 capitalize cursor-normal">layout</div><div class="gray100 mb-4 shadow rounded-xl"><div data-link="layout/container" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;container</div><div data-link="layout/hero" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;hero</div><div data-link="layout/section" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;section</div><div data-link="layout/level" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;level</div><div data-link="layout/media-object" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;media-object</div><div data-link="layout/footer" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;footer</div></div><div class="flex p-4 gray300 font-bold text-deeppurple900 capitalize cursor-normal">pages</div><div class="gray100 mb-4 shadow rounded-xl"><div data-link="pages/login" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;login</div><div data-link="pages/register" class="flex p-3 text-bluegray900 capitalize cursor-pointer border border-bottom-solid border-bottom-gray300">&nbsp;register</div></div></div>
+	<div id="root" style="grid-area:1 / 7 / 1 / -1;" class="p-3">
+			<h1 class="text-3xl text-blue800">Home</h1>
+	</div>
+</div>
+
 	<script src="js/index.js"></script>
 </body>
 </html>

@@ -737,11 +737,6 @@
                 "n"
             ]
         },
-        "shadow-around-darkslategrey": {
-            "screens": [
-                "n"
-            ]
-        },
         "shadow-around-darkturquoise": {
             "screens": [
                 "n"
@@ -903,11 +898,6 @@
             ]
         },
         "shadow-around-dimgray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "shadow-around-dimgrey": {
             "screens": [
                 "n"
             ]
@@ -1413,11 +1403,6 @@
             ]
         },
         "shadow-around-lightslategray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "shadow-around-lightslategrey": {
             "screens": [
                 "n"
             ]

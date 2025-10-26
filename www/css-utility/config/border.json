@@ -892,11 +892,6 @@
                 "n"
             ]
         },
-        "border-left-darkslategrey": {
-            "screens": [
-                "n"
-            ]
-        },
         "border-left-darkturquoise": {
             "screens": [
                 "n"
@@ -1058,11 +1053,6 @@
             ]
         },
         "border-left-dimgray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-left-dimgrey": {
             "screens": [
                 "n"
             ]
@@ -1568,11 +1558,6 @@
             ]
         },
         "border-left-lightslategray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-left-lightslategrey": {
             "screens": [
                 "n"
             ]
@@ -2904,11 +2889,6 @@
                 "n"
             ]
         },
-        "border-right-darkslategrey": {
-            "screens": [
-                "n"
-            ]
-        },
         "border-right-darkturquoise": {
             "screens": [
                 "n"
@@ -3070,11 +3050,6 @@
             ]
         },
         "border-right-dimgray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-right-dimgrey": {
             "screens": [
                 "n"
             ]
@@ -3580,11 +3555,6 @@
             ]
         },
         "border-right-lightslategray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-right-lightslategrey": {
             "screens": [
                 "n"
             ]
@@ -4916,11 +4886,6 @@
                 "n"
             ]
         },
-        "border-top-darkslategrey": {
-            "screens": [
-                "n"
-            ]
-        },
         "border-top-darkturquoise": {
             "screens": [
                 "n"
@@ -5082,11 +5047,6 @@
             ]
         },
         "border-top-dimgray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-top-dimgrey": {
             "screens": [
                 "n"
             ]
@@ -5592,11 +5552,6 @@
             ]
         },
         "border-top-lightslategray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-top-lightslategrey": {
             "screens": [
                 "n"
             ]
@@ -6928,11 +6883,6 @@
                 "n"
             ]
         },
-        "border-bottom-darkslategrey": {
-            "screens": [
-                "n"
-            ]
-        },
         "border-bottom-darkturquoise": {
             "screens": [
                 "n"
@@ -7094,11 +7044,6 @@
             ]
         },
         "border-bottom-dimgray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-bottom-dimgrey": {
             "screens": [
                 "n"
             ]
@@ -7604,11 +7549,6 @@
             ]
         },
         "border-bottom-lightslategray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-bottom-lightslategrey": {
             "screens": [
                 "n"
             ]
@@ -8940,11 +8880,6 @@
                 "n"
             ]
         },
-        "border-darkslategrey": {
-            "screens": [
-                "n"
-            ]
-        },
         "border-darkturquoise": {
             "screens": [
                 "n"
@@ -9106,11 +9041,6 @@
             ]
         },
         "border-dimgray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-dimgrey": {
             "screens": [
                 "n"
             ]
@@ -9616,11 +9546,6 @@
             ]
         },
         "border-lightslategray": {
-            "screens": [
-                "n"
-            ]
-        },
-        "border-lightslategrey": {
             "screens": [
                 "n"
             ]
