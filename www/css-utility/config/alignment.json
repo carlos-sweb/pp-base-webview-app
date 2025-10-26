@@ -1,0 +1,255 @@
+{
+    "justify-content": {
+        "justify-around": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-between": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-evenly": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-start": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "justify-items": {
+        "justify-items-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-items-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-items-start": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-items-stretch": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "justify-self": {
+        "justify-self-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-self-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-self-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-self-start": {
+            "screens": [
+                "n"
+            ]
+        },
+        "justify-self-stretch": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "align-content": {
+        "content-around": {
+            "screens": [
+                "n"
+            ]
+        },
+        "content-between": {
+            "screens": [
+                "n"
+            ]
+        },
+        "content-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "content-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "content-evenly": {
+            "screens": [
+                "n"
+            ]
+        },
+        "content-start": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "align-items": {
+        "items-baseline": {
+            "screens": [
+                "n"
+            ]
+        },
+        "items-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "items-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "items-start": {
+            "screens": [
+                "n"
+            ]
+        },
+        "items-stretch": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "align-self": {
+        "self-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "self-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "self-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "self-start": {
+            "screens": [
+                "n"
+            ]
+        },
+        "self-stretch": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "place-content": {
+        "place-content-around": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-content-between": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-content-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-content-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-content-evenly": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-content-start": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-content-stretch": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "place-items": {
+        "place-items-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-items-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-items-start": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-items-stretch": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "place-self": {
+        "place-self-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-self-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-self-end": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-self-start": {
+            "screens": [
+                "n"
+            ]
+        },
+        "place-self-stretch": {
+            "screens": [
+                "n"
+            ]
+        }
+    }
+}

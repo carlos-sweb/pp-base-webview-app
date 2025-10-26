@@ -1,0 +1,439 @@
+{
+    "box-sizing": {
+        "box-border": {
+            "screens": [
+                "n"
+            ]
+        },
+        "box-content": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "display": {
+        "block": {
+            "screens": [
+                "n"
+            ]
+        },
+        "contents": {
+            "screens": [
+                "n"
+            ]
+        },
+        "flex": {
+            "screens": [
+                "n"
+            ]
+        },
+        "flow-root": {
+            "screens": [
+                "n"
+            ]
+        },
+        "grid": {
+            "screens": [
+                "n"
+            ]
+        },
+        "hidden": {
+            "screens": [
+                "n"
+            ]
+        },
+        "inline": {
+            "screens": [
+                "n"
+            ]
+        },
+        "inline-block": {
+            "screens": [
+                "n"
+            ]
+        },
+        "inline-flex": {
+            "screens": [
+                "n"
+            ]
+        },
+        "inline-grid": {
+            "screens": [
+                "n"
+            ]
+        },
+        "inline-table": {
+            "screens": [
+                "n"
+            ]
+        },
+        "list-item": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-caption": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-cell": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-column": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-column-group": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-footer-group": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-header-group": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-row": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-row-group": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "float": {
+        "float-left": {
+            "screens": [
+                "n"
+            ]
+        },
+        "float-none": {
+            "screens": [
+                "n"
+            ]
+        },
+        "float-right": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "clear": {
+        "clear-both": {
+            "screens": [
+                "n"
+            ]
+        },
+        "clear-left": {
+            "screens": [
+                "n"
+            ]
+        },
+        "clear-none": {
+            "screens": [
+                "n"
+            ]
+        },
+        "clear-right": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "isolate": {
+        "isolate": {
+            "screens": [
+                "n"
+            ]
+        },
+        "isolation-auto": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "object-fit": {
+        "object-contain": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-cover": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-fill": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-none": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-scale-down": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "object-position": {
+        "object-bottom": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-left": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-left-bottom": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-left-top": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-right": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-right-bottom": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-right-top": {
+            "screens": [
+                "n"
+            ]
+        },
+        "object-top": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "overflow": {
+        "overflow-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-hidden": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-scroll": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-visible": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "overflow-x": {
+        "overflow-x-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-x-hidden": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-x-scroll": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-x-visible": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "overflow-y": {
+        "overflow-y-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-y-hidden": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-y-scroll": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overflow-y-visible": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "overscroll-behavior": {
+        "overscroll-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overscroll-contain": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overscroll-none": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "overscroll-behavior-y": {
+        "overscroll-y-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overscroll-y-contain": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overscroll-y-none": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "overscroll-behavior-x": {
+        "overscroll-x-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overscroll-x-contain": {
+            "screens": [
+                "n"
+            ]
+        },
+        "overscroll-x-none": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "position": {
+        "absolute": {
+            "screens": [
+                "n"
+            ]
+        },
+        "fixed": {
+            "screens": [
+                "n"
+            ]
+        },
+        "relative": {
+            "screens": [
+                "n"
+            ]
+        },
+        "static": {
+            "screens": [
+                "n"
+            ]
+        },
+        "sticky": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "visibility": {
+        "invisible": {
+            "screens": [
+                "n"
+            ]
+        },
+        "visible": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "z-index": {
+        "z-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "z-10": {
+            "screens": [
+                "n"
+            ]
+        },
+        "z-20": {
+            "screens": [
+                "n"
+            ]
+        },
+        "z-30": {
+            "screens": [
+                "n"
+            ]
+        },
+        "z-40": {
+            "screens": [
+                "n"
+            ]
+        },
+        "z-50": {
+            "screens": [
+                "n"
+            ]
+        },
+        "z-auto": {
+            "screens": [
+                "n"
+            ]
+        }
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "background-attachment": {
+        "bg-fixed": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-local": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-scroll": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "background-clip": {
+        "bg-clip-border": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-clip-content": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-clip-padding": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "background-position": {
+        "bg-bottom": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-left": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-left-bottom": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-left-top": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-right": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-right-bottom": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-right-top": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-top": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "background-repeat": {
+        "bg-no-repeat": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-repeat": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-repeat-round": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-repeat-space": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-repeat-x": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-repeat-y": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "background-size": {
+        "bg-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-contain": {
+            "screens": [
+                "n"
+            ]
+        },
+        "bg-cover": {
+            "screens": [
+                "n"
+            ]
+        }
+    }
+}

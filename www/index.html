@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"/>	-->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"/>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="r.js"></script>
+	<title>Ide</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="node_modules/@fontsource/jetbrains-mono/latin.css">
+	<link rel="stylesheet" href="css-utility/dist/master.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/ready.js"></script>
 </head>
 <body>	
-
-	<video controls autoplay width="640" height="360">
-  <source src="https://janus-tv-ply.senado.cl/playlist/playlist.m3u8" type="application/x-mpegURL">
-  Tu navegador no soporta video HLS.
-</video>
-
-	
-	<h1>Hello aaaa</h1>
+	<h1 id="title" class="text-red800 lowercase pl-5" >Hola a todos</h1>
 	<h3 id="text"></h3>
+	<script src="js/index.js"></script>
 </body>
 </html>

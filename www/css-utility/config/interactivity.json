@@ -1,0 +1,124 @@
+{
+    "outline": {
+        "outline-black": {
+            "screens": [
+                "n"
+            ]
+        },
+        "outline-none": {
+            "screens": [
+                "n"
+            ]
+        },
+        "outline-white": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "outline-offset": {
+        "outline-offset-2": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "appearance": {
+        "appearance-none": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "cursor": {
+        "cursor-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "cursor-default": {
+            "screens": [
+                "n"
+            ]
+        },
+        "cursor-help": {
+            "screens": [
+                "n"
+            ]
+        },
+        "cursor-move": {
+            "screens": [
+                "n"
+            ]
+        },
+        "cursor-none": {
+            "screens": [
+                "n"
+            ]
+        },
+        "cursor-not-allowed": {
+            "screens": [
+                "n"
+            ]
+        },
+        "cursor-pointer": {
+            "screens": [
+                "n"
+            ]
+        },
+        "cursor-text": {
+            "screens": [
+                "n"
+            ]
+        },
+        "cursor-wait": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "resize": {
+        "resize": {
+            "screens": [
+                "n"
+            ]
+        },
+        "resize-horizontal": {
+            "screens": [
+                "n"
+            ]
+        },
+        "resize-none": {
+            "screens": [
+                "n"
+            ]
+        },
+        "resize-vertical": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "user-select": {
+        "select-all": {
+            "screens": [
+                "n"
+            ]
+        },
+        "select-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "select-none": {
+            "screens": [
+                "n"
+            ]
+        },
+        "select-text": {
+            "screens": [
+                "n"
+            ]
+        }
+    }
+}

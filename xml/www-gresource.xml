@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>  
+  
+  <gresource prefix="/">    
+    <file compressed="true">index.html</file>
+    <file compressed="true" >js/ready.js</file>
+    <file compressed="true" >js/index.js</file>
+
+  
+    <file compressed="true" alias="normalize.css" >node_modules/normalize.css/normalize.css</file>
+
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/latin.css</file>
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-100-normal.woff2</file>
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-200-normal.woff2</file>
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-300-normal.woff2</file>
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2</file>
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2</file>
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-600-normal.woff2</file>
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2</file>
+    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-800-normal.woff2</file>
+
+    <file compressed="true">css-utility/dist/master.css</file>
+
+      
+    <file compressed="true">css-utility/dist/category/alignment.min.css</file>
+    <file compressed="true">css-utility/dist/category/backgrounds.min.css</file>
+    <file compressed="true">css-utility/dist/category/bgcolor.min.css</file>
+    <file compressed="true">css-utility/dist/category/border.min.css</file>
+    <file compressed="true">css-utility/dist/category/effects.min.css</file>
+    <file compressed="true">css-utility/dist/category/flexbox.min.css</file>
+    <file compressed="true">css-utility/dist/category/grid.min.css</file>
+    <file compressed="true">css-utility/dist/category/interactivity.min.css</file>
+    <file compressed="true">css-utility/dist/category/layout.min.css</file>
+    <file compressed="true">css-utility/dist/category/sizing.min.css</file>
+    <file compressed="true">css-utility/dist/category/spacing.min.css</file>
+    <file compressed="true">css-utility/dist/category/tables.min.css</file>
+    <file compressed="true">css-utility/dist/category/transforms.min.css</file>
+    <file compressed="true">css-utility/dist/category/typography.min.css</file>
+
+
+    <file compressed="true"  >css/style.css</file>
+  </gresource>
+</gresources>

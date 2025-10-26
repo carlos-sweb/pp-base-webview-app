@@ -1,0 +1,57 @@
+{
+    "normalize": true,
+    "categories": [
+        "alignment",
+        "backgrounds",
+        "bgcolor",
+        "border",
+        "effects",
+        "flexbox",
+        "grid",
+        "interactivity",
+        "layout",
+        "sizing",
+        "spacing",
+        "tables",
+        "transforms",
+        "typography"
+    ],
+    "screens": {
+        "lg": {
+            "min": "1024px",
+            "max": "2000px"
+        },
+        "md": {
+            "min": "768px",
+            "max": "1023px"
+        },
+        "sm": {
+            "min": "640px",
+            "max": "767px"
+        },
+        "xs": {
+            "min": "0px",
+            "max": "639px"
+        }
+    },
+    "states": [
+        "link",
+        "visited",
+        "first-child",
+        "last-child",
+        "only-child",
+        "nth-child(odd)",
+        "nth-child(even)",
+        "hover",
+        "focus",
+        "active",
+        "checked",
+        "disabled",
+        "focus-visible",
+        "required"
+    ],
+    "output": {
+        "file": "master.css",
+        "minify": true
+    }
+}

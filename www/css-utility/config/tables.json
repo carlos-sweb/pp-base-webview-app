@@ -1,0 +1,26 @@
+{
+    "border-collapse": {
+        "border-collapse": {
+            "screens": [
+                "n"
+            ]
+        },
+        "border-separate": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "table-layout": {
+        "table-auto": {
+            "screens": [
+                "n"
+            ]
+        },
+        "table-fixed": {
+            "screens": [
+                "n"
+            ]
+        }
+    }
+}

@@ -4,6 +4,7 @@
 static void on_ready(WebKitUserContentManager* self, JSCValue* value, gpointer user_data){
     WebKitWebView *webview = WEBKIT_WEB_VIEW(user_data);    
     if( !gtk_widget_get_visible(GTK_WIDGET(webview)) ){
+      //g_print("Works\n");
       gtk_widget_set_visible(GTK_WIDGET(webview), TRUE);    
     }
     
@@ -20,12 +21,15 @@ static void custom_scheme_handler(WebKitURISchemeRequest *request, gpointer user
               
     // Ruta en GResource
     gchar *resource_path = g_strdup_printf("/%s", path);
+
+    g_print("url : %s\n",resource_path);
     
     GBytes *data = g_resources_lookup_data(resource_path, G_RESOURCE_LOOKUP_FLAGS_NONE, NULL);
 
     g_free(resource_path);
 
     if (!data) {
+      g_print("404 %s\n",path);
         // Si no lo encuentra, devuelve error 404
         webkit_uri_scheme_request_finish_error(
             request,

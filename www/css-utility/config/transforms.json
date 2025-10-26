@@ -1,0 +1,783 @@
+{
+    "transform": {
+        "rotate-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-1": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-12": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-180": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-2": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-3": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-4": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-45": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-6": {
+            "screens": [
+                "n"
+            ]
+        },
+        "rotate-90": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-100": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-105": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-110": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-125": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-150": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-25": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-50": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-75": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-90": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-95": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-100": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-105": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-110": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-125": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-150": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-25": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-50": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-75": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-90": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-x-95": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-100": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-105": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-110": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-125": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-150": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-25": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-50": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-75": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-90": {
+            "screens": [
+                "n"
+            ]
+        },
+        "scale-y-95": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-x-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-x-1": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-x-12": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-x-2": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-x-3": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-x-4": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-x-5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-x-6": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-y-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-y-1": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-y-12": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-y-2": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-y-3": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-y-4": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-y-5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "skew-y-6": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-0\\.5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-1": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-10": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-11": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-12": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-14": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-16": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-1\\.5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-1\\": [
+            null,
+            null,
+            {
+                "screens": [
+                    "n"
+                ]
+            },
+            null,
+            {
+                "screens": [
+                    "n"
+                ]
+            }
+        ],
+        "translate-x-2": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-20": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-24": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-28": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-2\\.5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-2\\": [
+            null,
+            null,
+            null,
+            {
+                "screens": [
+                    "n"
+                ]
+            }
+        ],
+        "translate-x-3": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-32": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-36": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-3\\.5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-3\\": [
+            null,
+            null,
+            null,
+            null,
+            {
+                "screens": [
+                    "n"
+                ]
+            }
+        ],
+        "translate-x-4": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-40": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-44": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-48": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-52": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-56": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-6": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-60": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-64": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-7": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-72": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-8": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-80": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-9": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-96": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-full": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-x-px": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-0": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-0\\.5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-1": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-10": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-11": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-12": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-14": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-16": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-1\\.5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-1\\": [
+            null,
+            null,
+            null,
+            {
+                "screens": [
+                    "n"
+                ]
+            },
+            {
+                "screens": [
+                    "n"
+                ]
+            }
+        ],
+        "translate-y-2": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-20": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-24": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-28": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-2\\.5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-2\\": [
+            null,
+            null,
+            null,
+            {
+                "screens": [
+                    "n"
+                ]
+            }
+        ],
+        "translate-y-3": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-32": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-36": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-3\\.5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-3\\": [
+            null,
+            null,
+            null,
+            null,
+            {
+                "screens": [
+                    "n"
+                ]
+            }
+        ],
+        "translate-y-4": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-40": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-44": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-48": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-5": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-52": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-56": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-6": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-60": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-64": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-7": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-72": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-8": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-80": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-9": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-96": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-full": {
+            "screens": [
+                "n"
+            ]
+        },
+        "translate-y-px": {
+            "screens": [
+                "n"
+            ]
+        }
+    },
+    "transform-origin": {
+        "origin-bottom": {
+            "screens": [
+                "n"
+            ]
+        },
+        "origin-bottom-left": {
+            "screens": [
+                "n"
+            ]
+        },
+        "origin-bottom-right": {
+            "screens": [
+                "n"
+            ]
+        },
+        "origin-center": {
+            "screens": [
+                "n"
+            ]
+        },
+        "origin-left": {
+            "screens": [
+                "n"
+            ]
+        },
+        "origin-right": {
+            "screens": [
+                "n"
+            ]
+        },
+        "origin-top": {
+            "screens": [
+                "n"
+            ]
+        },
+        "origin-top-left": {
+            "screens": [
+                "n"
+            ]
+        },
+        "origin-top-right": {
+            "screens": [
+                "n"
+            ]
+        }
+    }
+}
