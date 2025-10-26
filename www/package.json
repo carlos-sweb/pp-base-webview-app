@@ -5,6 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "@fontsource/jetbrains-mono": "4.5.10",
+    "animate.css": "^4.1.1",
+    "lucide-static": "^0.548.0",
     "normalize.css": "^8.0.1"
   }
 }

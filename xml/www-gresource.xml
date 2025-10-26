@@ -1,24 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>  
-  
-  <gresource prefix="/">    
+  <gresource prefix="/font">
+    <file compressed="true" alias="latin.css" >node_modules/@fontsource/jetbrains-mono/latin.css</file>    
+    <file compressed="true" alias="files/jetbrains-mono-latin-100-normal.woff" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-100-normal.woff</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-100-normal.woff2" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-100-normal.woff2</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-200-normal.woff2" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-200-normal.woff2</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-200-normal.woff" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-200-normal.woff</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-300-normal.woff2" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-300-normal.woff2</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-300-normal.woff" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-300-normal.woff</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-400-normal.woff2" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-400-normal.woff" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-500-normal.woff2" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-500-normal.woff" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-600-normal.woff2" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-600-normal.woff2</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-600-normal.woff" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-600-normal.woff</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-700-normal.woff2" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-700-normal.woff" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-800-normal.woff2" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-800-normal.woff2</file>
+    <file compressed="true" alias="files/jetbrains-mono-latin-800-normal.woff" >node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-800-normal.woff</file>
+    <file compressed="true" alias="lucide.css" >node_modules/lucide-static/font/lucide.css</file>
+    <file compressed="true" alias="lucide.woff" >node_modules/lucide-static/font/lucide.woff</file>
+    <file compressed="true" alias="lucide.woff2" >node_modules/lucide-static/font/lucide.woff2</file>
+    <file compressed="true" alias="lucide.ttf" >node_modules/lucide-static/font/lucide.ttf</file>
+  </gresource>
+  <gresource prefix="/">
+
+    <file compressed="true">webview.ui</file>
+    
     <file compressed="true">index.html</file>
     <file compressed="true" >js/ready.js</file>
     <file compressed="true" >js/index.js</file>
 
   
     <file compressed="true" alias="normalize.css" >node_modules/normalize.css/normalize.css</file>
+    <file compressed="true" alias="animate.css" >node_modules/animate.css/animate.css</file>
 
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/latin.css</file>
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-100-normal.woff2</file>
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-200-normal.woff2</file>
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-300-normal.woff2</file>
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2</file>
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2</file>
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-600-normal.woff2</file>
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2</file>
-    <file compressed="true">node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-800-normal.woff2</file>
-
+   
+   
     <file compressed="true">css-utility/dist/master.css</file>
 
       
@@ -36,8 +54,6 @@
     <file compressed="true">css-utility/dist/category/tables.min.css</file>
     <file compressed="true">css-utility/dist/category/transforms.min.css</file>
     <file compressed="true">css-utility/dist/category/typography.min.css</file>
-
-
     <file compressed="true"  >css/style.css</file>
   </gresource>
 </gresources>

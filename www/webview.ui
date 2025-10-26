@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="webkit2gtk" version="6.0"/>
+  <object id="window" class="GtkWindow">
+    <property name="title">Grid</property>
+    <property name="maximized">TRUE</property>
+    <property name="default-width">800</property>
+    <property name="default-height">600</property>    
+  </object>
+</interface>
