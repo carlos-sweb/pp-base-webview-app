@@ -6,6 +6,7 @@
     {
       "/": {
         controller: function() {
+          console.log("Home");
           root.innerHTML = `<h1>Home</h1>`;
         }
       },
@@ -20,6 +21,7 @@
     "/vegetables/:name(string)/:id(number)",
     {
       controller: function(params) {
+        console.log("router params");
         root.innerHTML = `<h1>vegetables ${params.name} : ${params.id} </h1>`;
       }
     }

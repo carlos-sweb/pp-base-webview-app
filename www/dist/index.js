@@ -10,11 +10,12 @@ var router = new ppRouter(
     {
     "/":{
         controller:function(){
+            console.log("Home");
             root.innerHTML = `<h1>Home</h1>`;
         }
     },
     "/route-remove":{
-        controller:function(){
+        controller:function(){            
             root.innerHTML = `<h1>Route Remove</h1>`;
         }
     }
@@ -25,6 +26,7 @@ var router = new ppRouter(
 router.addRoute("/vegetables/:name(string)/:id(number)",
     {
         controller:function( params ){				
+            console.log("router params");
             root.innerHTML = `<h1>vegetables ${params.name} : ${params.id} </h1>`;
         }
     }
