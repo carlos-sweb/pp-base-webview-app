@@ -82,6 +82,73 @@ static void activate(GtkApplication *app,gpointer user_data){
   WebKitWebView                    *web_view;
   WebKitWebContext        * web_view_context; 
   WebKitUserContentManager *web_view_manager;
+  WebKitSettings           *web_view_settings;  // Añadir esto
+
+  GtkWidget                          *window;
+
+  window=gtk_application_window_new(app);
+  gtk_window_maximize(GTK_WINDOW(window));  
+  gtk_window_set_title(GTK_WINDOW(window),"");
+  gtk_window_set_default_size(GTK_WINDOW(window),967,600);
+  
+  // create webview
+  web_view_manager = webkit_user_content_manager_new();    
+  
+  webkit_user_content_manager_register_script_message_handler( 
+    web_view_manager,
+    "ready",
+    NULL
+    );
+
+  web_view_context = webkit_web_context_new();
+  
+  webkit_web_context_register_uri_scheme(
+      web_view_context,
+      "app",
+      custom_scheme_handler,
+      NULL, NULL
+  );
+  
+  // Crear settings para habilitar el inspector
+  web_view_settings = webkit_settings_new();
+  webkit_settings_set_enable_developer_extras(web_view_settings, TRUE);
+  
+  web_view = WEBKIT_WEB_VIEW(
+      g_object_new(
+          WEBKIT_TYPE_WEB_VIEW,
+          "user-content-manager",web_view_manager,
+          "web-context",web_view_context,
+          "settings",web_view_settings,  // Añadir settings
+          NULL
+      )
+  );
+
+
+  WebKitWebInspector *inspector = webkit_web_view_get_inspector(web_view);
+  webkit_web_inspector_show(inspector);
+
+  webkit_settings_set_enable_write_console_messages_to_stdout(web_view_settings, TRUE);
+webkit_settings_set_javascript_can_access_clipboard(web_view_settings, TRUE);
+  
+  g_signal_connect(
+    web_view_manager,
+    "script-message-received::ready",
+    G_CALLBACK(on_ready),
+    web_view
+  );
+
+  gtk_window_set_child(GTK_WINDOW(window),GTK_WIDGET(web_view));
+  gtk_widget_set_visible(GTK_WIDGET(web_view),FALSE);
+  webkit_web_view_load_uri(web_view,"app://index.html");
+  gtk_window_present(GTK_WINDOW(window));
+
+}
+
+static void activatea(GtkApplication *app,gpointer user_data){
+
+  WebKitWebView                    *web_view;
+  WebKitWebContext        * web_view_context; 
+  WebKitUserContentManager *web_view_manager;
 
   GtkWidget                          *window;
 

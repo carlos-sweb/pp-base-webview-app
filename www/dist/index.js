@@ -1,9 +1,8 @@
-import "pp-is"
-import  "pp-router.js"
-
-
 // Declare root html element
 var root = document.getElementById("root");
+
+
+
 
 // Declare router here
 var router = new ppRouter(

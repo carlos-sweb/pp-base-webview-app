@@ -26,8 +26,13 @@
   <gresource prefix="/">    
     <file compressed="true">index.html</file>
     <file compressed="true" >js/ready.js</file>
-    <file compressed="true" >js/index.js</file>
-    <file compressed="true" >js/bundle.js</file>
+    
+    
+
+    <file compressed="true" alias="pp-is.min.js" >node_modules/pp-is/dist/pp-is.min.js</file>
+    <file compressed="true" alias="pp-router.min.js" >node_modules/pp-router.js/pp-router.min.js</file>
+    <file compressed="true" alias="bundle.js" >js/bundle.js</file>
+
 
     <file compressed="true" alias="normalize.css" >node_modules/normalize.css/normalize.css</file>
     <file compressed="true" alias="animate.css" >node_modules/animate.css/animate.css</file>   
