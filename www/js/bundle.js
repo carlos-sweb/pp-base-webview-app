@@ -1,98 +1,11 @@
-(() => {
-  var __create = Object.create;
-  var __defProp = Object.defineProperty;
-  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-  var __getOwnPropNames = Object.getOwnPropertyNames;
-  var __getProtoOf = Object.getPrototypeOf;
-  var __hasOwnProp = Object.prototype.hasOwnProperty;
-  var __commonJS = (cb, mod) => function __require() {
-    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-  };
-  var __copyProps = (to, from, except, desc) => {
-    if (from && typeof from === "object" || typeof from === "function") {
-      for (let key of __getOwnPropNames(from))
-        if (!__hasOwnProp.call(to, key) && key !== except)
-          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-    }
-    return to;
-  };
-  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-    // If the importer is in node compatibility mode or this is not an ESM
-    // file that has been converted to a CommonJS file using a Babel-
-    // compatible transform (i.e. "__esModule" has not been set), then set
-    // "default" to the CommonJS "module.exports" for node compatibility.
-    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-    mod
-  ));
+(()=>{var H=Object.create;var x=Object.defineProperty;var O=Object.getOwnPropertyDescriptor;var F=Object.getOwnPropertyNames;var A=Object.getPrototypeOf,M=Object.prototype.hasOwnProperty;var E=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports);var $=(t,n,i,r)=>{if(n&&typeof n=="object"||typeof n=="function")for(let o of F(n))!M.call(t,o)&&o!==i&&x(t,o,{get:()=>n[o],enumerable:!(r=O(n,o))||r.enumerable});return t};var j=(t,n,i)=>(i=t!=null?H(A(t)):{},$(n||!t||!t.__esModule?x(i,"default",{value:t,enumerable:!0}):i,t));var L=E((y,b)=>{(function(t,n){typeof y=="object"&&typeof b<"u"?b.exports=n():typeof define=="function"&&define.amd?define(n):(t=typeof globalThis<"u"?globalThis:t||self).ppIs=n()})(y,(function(){"use strict";let t=(e,d)=>(f=>Object.prototype.toString.call(f))(e)==="[object "+d+"]",n=e=>t(e,"String"),i=e=>t(e,"Array"),r=e=>t(e,"Object"),o=e=>e===!0||e===!1||t(e,"Boolean"),c=e=>t(e,"Function"),l=e=>t(e,"Undefined"),a=e=>t(e,"Null"),h=e=>Number.isNaN(Number.parseInt(e)),u=(e,d,f)=>{let p=e(d);return o(p)?p:f},s=e=>(d,f,p)=>((_,g,N,k)=>{let v=_(g);return v?!c(N)||u(N,g,v):!!c(k)&&u(k,g,v)})(e,d,f,p);return{isArray:s(i),isBoolean:s(o),isDate:s((e=>t(e,"Date"))),isElement:s((e=>!(!e||e.nodeType!==1))),isEmpty:s((e=>n(e)?e==="":i(e)?e.length==0:!r(e)||Object.keys(e).length===0)),isBlank:s((e=>!!n(e)&&(e===""||e.trim()===""))),isFunction:s(c),isNull:s(a),isNumber:s((e=>t(e,"Number")&&!h(e))),isObject:s(r),isString:s(n),isUndefined:s(l),isNil:s((e=>l(e)||a(e))),isEmail:s((e=>/^([a-z1-9\._-]+)@([a-z0-9-]+\.[a-z]{2,11}|[a-z0-9]+\.[a-z]{2,24}\.[a-z]{2,24})$/i.test(e))),isNaN:s(h),isRegExp:s((e=>t(e,"RegExp"))),isUrl:s((e=>/^(https?:\/\/)?([w]{3}\.|[w]{3}2\.)?([a-z\d]+\.)?([a-z\d]+\.[a-z]{2,}|localhost|[\d]+\.[\d]+\.[\d]+\.[\d]+)(\:[\d]+)?([\??\/?]+[\/;&a-z\d%_.~+=-]*)?(\#[\/;&a-z\d%_.~+=-]*)?$/gi.test(e))),isNodeList:s((e=>typeof NodeList<"u"&&NodeList.prototype.isPrototypeOf(e))),isHTMLCollection:s((e=>typeof HTMLCollection<"u"&&HTMLCollection.prototype.isPrototypeOf(e))),isPromise:s((e=>t(e,"Promise")))}}))});var T=E((R,w)=>{(function(t,n){typeof R=="object"&&typeof w<"u"?w.exports=n():typeof define=="function"&&define.amd?define("ppRouter",n):(t=t||self,(function(){var i=typeof ppIs>"u"?t.ppRouter=n():t.ppRouter=n(ppIs)})())})(R,(function(t){return function(n){this.current_hash=null,this.routes=n||{},this.addRoute=function(i,r){this.routes[i]=r},this.removeRoute=function(i){for(var r=Object.keys(this.routes),o=0;o<r.length;o++)if(r[o]===i){delete this.routes[i];break}},this.history=window.history,this.location=window.location,this.params=null,window.addEventListener("hashchange",function(){this.run()}.bind(this)),this.redirect=function(i){this.url_redirect=i},this.run=function(){var i=[],r=this.location.hash;r===""&&(r=r+"/",this.location.hash="/");let o=Object.keys(n);for(var c=0;c<o.length;c++){let s=this.checkHash(r,o[c]);s.success&&t.isFunction(this.routes[o[c]].controller)&&i.push(s)}if(i.length===0&&(t.isFunction(this.noFound)&&this.noFound(this.location),typeof this.url_redirect=="string"&&(this.location.hash=this.url_redirect)),i.length>0){for(var l=[],c=0;c<i.length;c++)l.push(i[c].dinamic);var a=Math.min(...l),h=l.indexOf(a),u=i[h].pattern;this.params=i[h].params,this.routes[u].controller(i[h].params),this.current_hash=u}},this.checkHash=function(i,r){var o=0;if(i.replace("#","")===r&&r.indexOf(":")===-1)return{success:!0,dinamic:o,pattern:r,params:{}};let c=/\/[(\:)]{1}([a-z,A-Z,0-9,\-,\_]{0,})[\(](string|any|number)[\)]/g;for(var l=new RegExp(c),a="^#"+r,h=[],u;(u=l.exec(r))!=null;)switch(h.push(u),u[2]){case"number":a=a.replace(u[0],"/([0-9]{1,})"),o++;break;case"any":a=a.replace(u[0],"/([0-9A-Za-z]{1,})"),o++;break;case"string":a=a.replace(u[0],"/([A-Za-z-_]{1,})"),o++;break}a=a.replaceAll("/","[\\/]{1}"),a=a+"$";var s=new RegExp(a),e=s.exec(i);if(e!==null){var d=new Object;return h.forEach((f,p)=>{d[f[1]]=e[p+1]}),{success:!0,dinamic:o,pattern:r,params:d}}else this.params=null;return{success:!1}},this.start=function(i){t.isString(i,function(r){this.location.hash=r}.bind(this)),this.run()}}}))});var P=j(L()),S=j(T()),z=document.getElementById("root"),m=new ppRouter({"/":{controller:function(){z.innerHTML="<h1>Home</h1>"}},"/route-remove":{controller:function(){z.innerHTML="<h1>Route Remove</h1>"}}});m.addRoute("/vegetables/:name(string)/:id(number)",{controller:function(t){z.innerHTML=`<h1>vegetables ${t.name} : ${t.id} </h1>`}});m.removeRoute("/route-remove");m.redirect("/");m.noFound=function(t){};m.start();})();
+/*! Bundled license information:
 
-  // www/node_modules/pp-is/dist/pp-is.min.js
-  var require_pp_is_min = __commonJS({
-    "www/node_modules/pp-is/dist/pp-is.min.js"(exports, module) {
-      !(function(e, t) {
-        "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : (e = "undefined" != typeof globalThis ? globalThis : e || self).ppIs = t();
-      })(exports, (function() {
-        "use strict";
-        const e = (e2, t2) => ((e3) => Object.prototype.toString.call(e3))(e2) === "[object " + t2 + "]", t = (t2) => e(t2, "String"), i = (t2) => e(t2, "Array"), o = (t2) => e(t2, "Object"), s = (t2) => true === t2 || false === t2 || e(t2, "Boolean"), n = (t2) => e(t2, "Function"), d = (t2) => e(t2, "Undefined"), l = (t2) => e(t2, "Null"), r = (e2) => Number.isNaN(Number.parseInt(e2)), a = (e2, t2, i2) => {
-          const o2 = e2(t2);
-          return s(o2) ? o2 : i2;
-        }, p = (e2) => (t2, i2, o2) => ((e3, t3, i3, o3) => {
-          const s2 = e3(t3);
-          return s2 ? !n(i3) || a(i3, t3, s2) : !!n(o3) && a(o3, t3, s2);
-        })(e2, t2, i2, o2);
-        return { isArray: p(i), isBoolean: p(s), isDate: p(((t2) => e(t2, "Date"))), isElement: p(((e2) => !(!e2 || 1 !== e2.nodeType))), isEmpty: p(((e2) => t(e2) ? "" === e2 : i(e2) ? 0 == e2.length : !o(e2) || 0 === Object.keys(e2).length)), isBlank: p(((e2) => !!t(e2) && ("" === e2 || "" === e2.trim()))), isFunction: p(n), isNull: p(l), isNumber: p(((t2) => e(t2, "Number") && !r(t2))), isObject: p(o), isString: p(t), isUndefined: p(d), isNil: p(((e2) => d(e2) || l(e2))), isEmail: p(((e2) => /^([a-z1-9\._-]+)@([a-z0-9-]+\.[a-z]{2,11}|[a-z0-9]+\.[a-z]{2,24}\.[a-z]{2,24})$/i.test(e2))), isNaN: p(r), isRegExp: p(((t2) => e(t2, "RegExp"))), isUrl: p(((e2) => /^(https?:\/\/)?([w]{3}\.|[w]{3}2\.)?([a-z\d]+\.)?([a-z\d]+\.[a-z]{2,}|localhost|[\d]+\.[\d]+\.[\d]+\.[\d]+)(\:[\d]+)?([\??\/?]+[\/;&a-z\d%_.~+=-]*)?(\#[\/;&a-z\d%_.~+=-]*)?$/gi.test(e2))), isNodeList: p(((e2) => "undefined" != typeof NodeList && NodeList.prototype.isPrototypeOf(e2))), isHTMLCollection: p(((e2) => "undefined" != typeof HTMLCollection && HTMLCollection.prototype.isPrototypeOf(e2))), isPromise: p(((t2) => e(t2, "Promise"))) };
-      }));
-    }
-  });
-
-  // www/node_modules/pp-events/dist/pp-events.min.js
-  var require_pp_events_min = __commonJS({
-    "www/node_modules/pp-events/dist/pp-events.min.js"(exports, module) {
-      !(function(e, n) {
-        "object" == typeof exports && "undefined" != typeof module ? module.exports = n(require_pp_is_min()) : "function" == typeof define && define.amd ? define(["pp-is"], n) : (e = "undefined" != typeof globalThis ? globalThis : e || self).ppEvents = n(e.ppIs);
-      })(exports, (function(e) {
-        "use strict";
-        return function n(i) {
-          var t = this;
-          if (!(t instanceof n)) return new n(i);
-          t.events = {}, t.checkOn = (n2) => e.isString(n2, ((e2) => Object.hasOwnProperty.call(t.events, e2))), t.on = (n2, i2) => {
-            e.isString(n2, ((n3) => {
-              e.isFunction(i2, ((i3) => {
-                let s = t.events;
-                e.isUndefined(s[n3], (() => {
-                  s[n3] = [i3];
-                }), (() => {
-                  s[n3].push(i3);
-                }));
-              }));
-            }));
-          }, t.emit = (n2, ...i2) => {
-            e.isString(n2, ((n3) => {
-              e.isArray(t.events[n3], ((e2) => {
-                for (const n4 of e2.slice()) n4.apply(t, i2);
-              }));
-            }));
-          }, t.removeListener = (n2, i2) => {
-            e.isString(n2, ((n3) => {
-              e.isArray(t.events[n3], ((e2) => {
-                const n4 = e2.indexOf(i2);
-                n4 > -1 && e2.splice(n4, 1);
-              }));
-            }));
-          }, e.isObject(i, (() => {
-            for (const e2 in i) t.on(e2, i[e2]);
-          }));
-        };
-      }));
-    }
-  });
-
-  // www/dist/index.js
-  var import_pp_is = __toESM(require_pp_is_min());
-  var import_pp_events = __toESM(require_pp_events_min());
-  var myEvent = (0, import_pp_events.default)({
-    "myCustom": function(msg) {
-      console.log("mensaje ....", (0, import_pp_is.isArray)(msg));
-    }
-  });
-  myEvent.emit("myCustom", "aaaa");
-})();
+pp-router.js/pp-router.js:
+  (*!!
+   * Power Panel Router <https://github.com/carlos-sweb/pp-router>
+   * @author Carlos Illesca
+   * @version 2.1.8 (2022/06/21 21:22 PM)
+   * Released under the MIT License
+   *)
+*/

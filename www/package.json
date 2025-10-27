@@ -12,6 +12,7 @@
     "lucide-static": "^0.548.0",
     "normalize.css": "^8.0.1",
     "pp-events": "^1.3.4",
-    "pp-is": "^1.2.7"
+    "pp-is": "^1.2.7",
+    "pp-router.js": "^2.1.8"
   }
 }
