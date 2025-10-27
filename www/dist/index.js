@@ -1,4 +1,11 @@
-import {isString} from "pp-is";
+import {isArray} from "pp-is"
+import events from "pp-events"
+
+const myEvent = events({
+	"myCustom":function(msg){
+		console.log("mensaje ....",isArray(msg));
+	}
+});
 
 
-console.log( isString("hola a todos") );
+myEvent.emit("myCustom","aaaa");

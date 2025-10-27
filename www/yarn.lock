@@ -22,7 +22,14 @@ normalize.css@^8.0.1:
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
   integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
 
-pp-is@^1.2.7:
+pp-events@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/pp-events/-/pp-events-1.3.4.tgz#7f75a0ef48261e905b360bc0ec6da498531912c7"
+  integrity sha512-xUi49MDRNlVPeDDH/BOih4txXmScuYiS4eju2k0DWDMJWcw26rDTUAnBh61LuN+U6c/1W9IpmOEf/YCsgwh7NQ==
+  dependencies:
+    pp-is "^1.2.4"
+
+pp-is@^1.2.4, pp-is@^1.2.7:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/pp-is/-/pp-is-1.2.7.tgz#244fd8b607d5d935ee8513e3f78ed5035ffa1c42"
   integrity sha512-BvUzu9yrjoNsQW+SiZi6BUgiq/rxZAkjMesKcexACBB5Z75/m8QrDKjh3e4fguhKqmicNBv7Q269aIpO7jDCVQ==
