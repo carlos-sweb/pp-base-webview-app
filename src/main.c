@@ -125,10 +125,10 @@ static void activate(GtkApplication *app,gpointer user_data){
 
 
   WebKitWebInspector *inspector = webkit_web_view_get_inspector(web_view);
-  webkit_web_inspector_show(inspector);
+  //webkit_web_inspector_show(inspector);
 
   webkit_settings_set_enable_write_console_messages_to_stdout(web_view_settings, TRUE);
-webkit_settings_set_javascript_can_access_clipboard(web_view_settings, TRUE);
+  webkit_settings_set_javascript_can_access_clipboard(web_view_settings, TRUE);
   
   g_signal_connect(
     web_view_manager,
@@ -136,6 +136,7 @@ webkit_settings_set_javascript_can_access_clipboard(web_view_settings, TRUE);
     G_CALLBACK(on_ready),
     web_view
   );
+
 
   gtk_window_set_child(GTK_WINDOW(window),GTK_WIDGET(web_view));
   gtk_widget_set_visible(GTK_WIDGET(web_view),FALSE);

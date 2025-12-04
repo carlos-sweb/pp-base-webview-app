@@ -4,16 +4,18 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTK REQUIRED IMPORTED_TARGET gtk4)
 pkg_check_modules(WEBKIT REQUIRED IMPORTED_TARGET webkitgtk-6.0)
 find_program(GLIB_COMPILE_RESOURCES NAMES glib-compile-resources REQUIRED)
+find_program(BUNJS NAMES bun REQUIRED)
 # listado de recursos para incluir en el proyecto
-set(RESOURCE_XML ${CMAKE_CURRENT_SOURCE_DIR}/xml/www-gresource.xml)
+set(RESOURCE_XML ${CMAKE_CURRENT_SOURCE_DIR}/xml/gresource.xml)
 # salida de recursos xml
 set(GENERATED_RESOURCE_C_WWW ${CMAKE_CURRENT_SOURCE_DIR}/src/www-gresource.c)
+
 
 add_custom_target(generate_resources_www ALL
   COMMAND ${GLIB_COMPILE_RESOURCES} 
     --target=${GENERATED_RESOURCE_C_WWW}
     --generate-source 
-    --sourcedir=${CMAKE_CURRENT_SOURCE_DIR}/www 
+    --sourcedir=${CMAKE_CURRENT_SOURCE_DIR}/
     ${RESOURCE_XML}
   DEPENDS ${RESOURCE_XML}
   BYPRODUCTS ${GENERATED_RESOURCE_C_WWW}
