@@ -1,13 +1,14 @@
 #include <gtk/gtk.h>
 #include <webkit/webkit.h>
 
-static void on_ready(WebKitUserContentManager* self, JSCValue* value, gpointer user_data){
-    WebKitWebView *webview = WEBKIT_WEB_VIEW(user_data);    
+
+static void on_ready( WebKitUserContentManager* self, 
+                     JSCValue* value, gpointer user_data){
+    WebKitWebView *webview = WEBKIT_WEB_VIEW(user_data);
     if( !gtk_widget_get_visible(GTK_WIDGET(webview)) ){
-      g_print("Works\n");
+      //g_print("Works\n");
       gtk_widget_set_visible(GTK_WIDGET(webview), TRUE);    
-    }
-    
+    }    
 }
 
 static void custom_scheme_handler(WebKitURISchemeRequest *request, gpointer user_data) {
@@ -17,8 +18,7 @@ static void custom_scheme_handler(WebKitURISchemeRequest *request, gpointer user
     const void *contents;
     const gchar *uri = webkit_uri_scheme_request_get_uri(request);  // ej: "app://index.html"
     const gchar * uri_base = "app://index.html";
-    const gchar *path = g_str_equal(uri,uri_base) ?  uri + strlen("app://") : uri + strlen("app://index.html/");
-              
+    const gchar *path = g_str_equal(uri,uri_base) ?  uri + strlen("app://") : uri + strlen("app://index.html/");                  
     // Ruta en GResource
     gchar *resource_path = g_strdup_printf("/%s", path);
 
@@ -158,7 +158,7 @@ static void activatea(GtkApplication *app,gpointer user_data){
   gtk_window_set_title(GTK_WINDOW(window),"");
   //removemos el title bar de gtk
   //gtk_window_set_decorated(GTK_WINDOW(window), FALSE);
-  //gtk_window_set_titlebar(GTK_WINDOW(window), NULL);
+  gtk_window_set_titlebar(GTK_WINDOW(window), NULL);
   //removemos el title bar de gtk
   gtk_window_set_default_size(GTK_WINDOW(window),967,600);
   
@@ -205,9 +205,9 @@ static void activatea(GtkApplication *app,gpointer user_data){
 int main (int argc,char **argv){
   GtkApplication *app;
   int status;
-  app=gtk_application_new("ide.pp.cillesca",G_APPLICATION_DEFAULT_FLAGS);
-  g_signal_connect(app,"activate",G_CALLBACK(activate),NULL);
-  status=g_application_run(G_APPLICATION(app),argc,argv);
-  g_object_unref(app);
+  app = gtk_application_new( "ide.pp.cillesca" , G_APPLICATION_DEFAULT_FLAGS );
+  g_signal_connect( app , "activate" , G_CALLBACK( activate ) , NULL );
+  status = g_application_run( G_APPLICATION( app ), argc , argv );
+  g_object_unref( app );
   return status;
 }

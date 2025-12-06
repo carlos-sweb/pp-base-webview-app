@@ -381,20 +381,14 @@
   </gresource>
   <gresource prefix="/js">
     <file compressed="true" alias="pp-is.min.js">www/node_modules/pp-is/dist/pp-is.min.js</file>
-  </gresource>
-  <gresource prefix="/js">
     <file compressed="true" alias="pp-events.min.js">www/node_modules/pp-events/dist/pp-events.min.js</file>
-  </gresource>
-  <gresource prefix="/js">
     <file compressed="true" alias="pp-router.min.js">www/node_modules/pp-router.js/pp-router.min.js</file>
-  </gresource>
-  <gresource prefix="/">
-    <file compressed="true" alias="index.html">www/index.html</file>
-  </gresource>
-  <gresource prefix="/js">
     <file compressed="true" alias="bundle.js">www/js/bundle.js</file>
     <file compressed="true" alias="index.js">www/js/index.js</file>
     <file compressed="true" alias="ready.js">www/js/ready.js</file>
+  </gresource>
+  <gresource prefix="/">
+    <file compressed="true" alias="index.html">www/index.html</file>
   </gresource>
   <gresource prefix="/css">
     <file compressed="true" alias="style.css">www/css/style.css</file>
