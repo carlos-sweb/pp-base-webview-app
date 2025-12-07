@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "4.5.10",
+    "@fontsource/poppins": "^5.2.7",
+    "@fontsource/ubuntu": "^5.2.8",
     "animate.css": "^4.1.1",
     "lucide-static": "^0.548.0",
     "normalize.css": "^8.0.1",

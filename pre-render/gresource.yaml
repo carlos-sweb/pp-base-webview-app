@@ -3,9 +3,9 @@
 - prefix: /css-utility/dist/category
   path: www/css-utility/dist/category/*.css
 - prefix: /font/files
-  path: www/node_modules/@fontsource/jetbrains-mono/files/*.{woff,woff2}
+  path: www/node_modules/@fontsource/poppins/files/*.{woff,woff2}
 - prefix: /font
-  path: www/node_modules/@fontsource/jetbrains-mono/*.css
+  path: www/node_modules/@fontsource/poppins/*.css
 - prefix: /js
   path:
   - www/node_modules/pp-is/dist/pp-is.min.js

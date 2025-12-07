@@ -5,10 +5,7 @@ static void on_title_changed(WebKitWebView *web_view, GParamSpec *pspec, gpointe
     GtkWindow *window = GTK_WINDOW(user_data);
     const gchar *title = webkit_web_view_get_title(web_view);
     if(title){
-        gtk_window_set_title(window, title);
-        g_print("Page title changed: %s\n", title);
-    }else{
-        g_print("Page title is now NULL\n");
+        gtk_window_set_title(window, title);        
     }
 }
 
@@ -89,29 +86,13 @@ static void custom_scheme_handler(WebKitURISchemeRequest *request, gpointer user
     g_bytes_unref(data);
 }
 
-
-
-// declaración previa
-gboolean on_context_menu(WebKitWebView* self,WebKitContextMenu* context_menu,WebKitHitTestResult* hit_test_result,gpointer user_data);
-// Implementación
-
-gboolean on_context_menu(WebKitWebView* self,WebKitContextMenu* context_menu,WebKitHitTestResult* hit_test_result,gpointer user_data){
-  return TRUE;
-}
-
-static void print_hello (GtkWidget *widget, gpointer   data){
-  g_print ("Hello World\n");
-}
-
 static void activate(GtkApplication *app,gpointer user_data){
 
-  WebKitWebView                    *web_view;
-  WebKitWebContext        * web_view_context; 
-  WebKitUserContentManager *web_view_manager;
-  WebKitSettings           *web_view_settings;  // Añadir esto
-
-  GtkWidget                          *window;
-
+  WebKitWebView                     *web_view;
+  WebKitWebContext          *web_view_context; 
+  WebKitUserContentManager  *web_view_manager;
+  WebKitSettings           *web_view_settings;
+  GtkWidget                           *window;
   window=gtk_application_window_new(app);
   gtk_window_maximize(GTK_WINDOW(window));  
   gtk_window_set_title(GTK_WINDOW(window),"");

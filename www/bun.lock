@@ -1,0 +1,39 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 0,
+  "workspaces": {
+    "": {
+      "name": "www",
+      "dependencies": {
+        "@fontsource/jetbrains-mono": "4.5.10",
+        "@fontsource/poppins": "^5.2.7",
+        "@fontsource/ubuntu": "^5.2.8",
+        "animate.css": "^4.1.1",
+        "lucide-static": "^0.548.0",
+        "normalize.css": "^8.0.1",
+        "pp-events": "^1.3.4",
+        "pp-is": "^1.2.7",
+        "pp-router.js": "^2.1.8",
+      },
+    },
+  },
+  "packages": {
+    "@fontsource/jetbrains-mono": ["@fontsource/jetbrains-mono@4.5.10", "", {}, "sha512-dylbkBmAWL0fkjDpDoDbQCwTQ/W3DzLtVXmwGyAyttfKliPGSP2WpAmmMFYp9NpqFMF7CLprFyzppe8u39Orkw=="],
+
+    "@fontsource/poppins": ["@fontsource/poppins@5.2.7", "", {}, "sha512-6uQyPmseo4FgI97WIhA4yWRlNaoLk4vSDK/PyRwdqqZb5zAEuc+Kunt8JTMcsHYUEGYBtN15SNkMajMdqUSUmg=="],
+
+    "@fontsource/ubuntu": ["@fontsource/ubuntu@5.2.8", "", {}, "sha512-esSJCpgigwWOm4Ug9f7AMozUyBq5Iobea5C9QYsl2OlCb62wZABBUbXahHLdFv5Ru4lJCD9tUX6xEAeLwUTNBg=="],
+
+    "animate.css": ["animate.css@4.1.1", "", {}, "sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ=="],
+
+    "lucide-static": ["lucide-static@0.548.0", "", {}, "sha512-gU7B6abtKtsw7DuSl1rsSKybMHja11g6I/2XYS6QLXnhD3jAirO3h4zP1ztV9epcjxiCtfXFIfsfqdD2gN5Icw=="],
+
+    "normalize.css": ["normalize.css@8.0.1", "", {}, "sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg=="],
+
+    "pp-events": ["pp-events@1.3.4", "", { "dependencies": { "pp-is": "^1.2.4" } }, "sha512-xUi49MDRNlVPeDDH/BOih4txXmScuYiS4eju2k0DWDMJWcw26rDTUAnBh61LuN+U6c/1W9IpmOEf/YCsgwh7NQ=="],
+
+    "pp-is": ["pp-is@1.2.7", "", {}, "sha512-BvUzu9yrjoNsQW+SiZi6BUgiq/rxZAkjMesKcexACBB5Z75/m8QrDKjh3e4fguhKqmicNBv7Q269aIpO7jDCVQ=="],
+
+    "pp-router.js": ["pp-router.js@2.1.8", "", { "dependencies": { "pp-is": "^1.0.0" } }, "sha512-5Qj8gX7Bhk6Rtue7BPybCxvQ19pMa0br0bUEpoSJhkZi8bgnTcL2OfY7LIHX1uYcPCMYf2U5PgqR584LEzkY+A=="],
+  }
+}

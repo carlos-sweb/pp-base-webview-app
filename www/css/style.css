@@ -1,4 +1,6 @@
-body{font-family: "JetBrains Mono";}
+body {
+  font-family: 'Poppins', sans-serif;
+}
 *{
 user-select: none;
 -ms-user-select: none;
