@@ -1,0 +1,9 @@
+doctype html
+html(lang="en")
+  head
+    title 
+  body
+    h1.greeting Hello 
+    p Age next year:     
+    p.status Active user    
+		

@@ -17,30 +17,22 @@
 <body class="animated fadeIn slow">
 	<div class="flex flex-row w-full h-14 gray200 justify-start items-center">
 		<span class="text-2xl text-blue900 font-bold pl-5 cursor-pointer">Navbar</span>
-	</div>
-	<h1 class="text-2xl text-blue600 font-ligh">An animated element</h1>
-	<div class="container"  >
-	<div class="columns">
-		<aside class="menu column is-one-quarter" >
-			<p class="menu-label">General</p>
-			<ul class="menu-list">
-				<li><a href="#/home">Home</a></li>
-			</ul>
-			<p class="menu-label">vegetables</p>
+	</div>	
 
-			<ul class="menu-list">
-				<li><a href="#/vegetables/artichokes/1">Artichokes</a></li>
-				<li><a href="#/vegetables/onion/20">Onion</a></li>
-				<li><a href="#/vegetables/carrots/2">Carrots</a></li>
-			</ul>
-			</aside>
-		<div id="root" class="column" >
-			<h1>Rotootto</h1>
-		</div>
-	</div>
+	   <h1>pp-router Test Page</h1>
+    <nav>
+        <a href="#/">Home</a>
+        <a href="#/about">About Us</a>
+        <a href="#/users/123">User 123</a>
+        <a href="#/products/apple-iphone-x">Product: Apple iPhone X</a>
+        <a href="#/files/documents/report.pdf">File: Report PDF</a>
+        <a href="#/nonexistent">Non-existent Page</a>
+    </nav>
+
+    <h2>Current Route:</h2>
+    <pre id="route-info">No route active yet.</pre>
+	
 </div>
-<script src="js/pp-is.min.js" ></script>
-<script src="js/pp-router.min.js" ></script>
 <script src="js/bundle.js"></script>
 </body>
 </html>
