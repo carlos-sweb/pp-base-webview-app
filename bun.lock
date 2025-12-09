@@ -4,13 +4,25 @@
   "workspaces": {
     "": {
       "dependencies": {
+        "@fontsource-variable/dancing-script": "^5.2.8",
+        "@fontsource-variable/jetbrains-mono": "^5.2.8",
+        "@fontsource-variable/roboto-mono": "^5.2.8",
         "@fontsource/jetbrains-mono": "4.5.10",
+        "@fontsource/ubuntu": "^5.2.8",
         "xml2js": "^0.6.2",
       },
     },
   },
   "packages": {
+    "@fontsource-variable/dancing-script": ["@fontsource-variable/dancing-script@5.2.8", "", {}, "sha512-K6Mkb5bn00WJTDsiKZ83p1hWZ3Q5U9YSH1nIp2ATknHi8ladevGGjIUQBs+LAgEr2y2W1XRV3VVuLsLVxH+G8g=="],
+
+    "@fontsource-variable/jetbrains-mono": ["@fontsource-variable/jetbrains-mono@5.2.8", "", {}, "sha512-WBA9elru6Jdp5df2mES55wuOO0WIrn3kpXnI4+W2ek5u3ZgLS9XS4gmIlcQhiZOWEKl95meYdvK7xI+ETLCq/Q=="],
+
+    "@fontsource-variable/roboto-mono": ["@fontsource-variable/roboto-mono@5.2.8", "", {}, "sha512-6M2U3wGIUxYNKRrUoKls8BRRIPDA57T8J0agqwyDkiEHrLEEAqptsxcUl3eTm6tnRNEn6yEm4pCefvtnujebDA=="],
+
     "@fontsource/jetbrains-mono": ["@fontsource/jetbrains-mono@4.5.10", "", {}, "sha512-dylbkBmAWL0fkjDpDoDbQCwTQ/W3DzLtVXmwGyAyttfKliPGSP2WpAmmMFYp9NpqFMF7CLprFyzppe8u39Orkw=="],
+
+    "@fontsource/ubuntu": ["@fontsource/ubuntu@5.2.8", "", {}, "sha512-esSJCpgigwWOm4Ug9f7AMozUyBq5Iobea5C9QYsl2OlCb62wZABBUbXahHLdFv5Ru4lJCD9tUX6xEAeLwUTNBg=="],
 
     "sax": ["sax@1.4.3", "", {}, "sha512-yqYn1JhPczigF94DMS+shiDMjDowYO6y9+wB/4WgO0Y19jWYk0lQ4tuG5KI7kj4FTp1wxPj5IFfcrz/s1c3jjQ=="],
 
