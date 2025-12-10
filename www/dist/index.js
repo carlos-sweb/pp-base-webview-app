@@ -1,40 +1,16 @@
-document.addEventListener('contextmenu', (e) => e.preventDefault() );
-
-import ppRouter from 'pp-router.js'
-const routeInfo = document.getElementById('route-info');
-    const router = new ppRouter({
-            '/': {
-                controller: (params) => {
-                    routeInfo.textContent = `Route: Home\nParams: ${JSON.stringify(params, null, 2)}`;
-                }
-            },
-            '/about': {
-                controller: (params) => {
-                    routeInfo.textContent = `Route: About Us\nParams: ${JSON.stringify(params, null, 2)}`;
-                }
-            },
-            '/users/:id(number)': {
-                controller: (params) => {
-                    routeInfo.textContent = `Route: User Profile\nID: ${params.id}\nParams: ${JSON.stringify(params, null, 2)}`;
-                }
-            },
-            '/products/:name(string)': {
-                controller: (params) => {
-                    routeInfo.textContent = `Route: Product Detail\nName: ${params.name}\nParams: ${JSON.stringify(params, null, 2)}`;
-                }
-            },
-            '/files/:dir(any)/:path(any)': {
-                controller: (params) => {
-                    routeInfo.textContent = `Route: File Viewer\nDir: ${params.dir}\nPath: ${params.path}\nParams: ${JSON.stringify(params, null, 2)}`;
-                }
-            }
-        });
-
-        router.setNoFound((location) => {
-            routeInfo.textContent = `Route: 404 Not Found\nLocation: ${location.hash}`;
-        });
-
-    // Optional: Redirect to home if a non-existent route is hit
-    // router.setRedirect('/')
-
-    router.start()
+(()=>{var S=(z)=>Object.prototype.toString.call(z);var _=(z,w)=>S(z)==="[object "+w+"]";var U=(z)=>_(z,"Promise");var J=(z)=>_(z,"String");var x=(z)=>J(z)?z===""||z.trim()==="":!1;var X=(z)=>_(z,"Array");var Y=(z)=>_(z,"Object");var N=(z)=>_(z,"RegExp");var Z=(z)=>z===!0||z===!1||_(z,"Boolean");var R=(z)=>_(z,"Date");var V=(z)=>_(z,"Function");var P=(z)=>_(z,"Undefined");var I=(z)=>_(z,"Null");var T=(z)=>P(z)||I(z);var M=(z)=>Number.isNaN(Number.parseInt(z));var A=(z)=>_(z,"Number")&&!M(z);var C=(z)=>/^([a-z1-9\._-]+)@([a-z0-9-]+\.[a-z]{2,11}|[a-z0-9]+\.[a-z]{2,24}\.[a-z]{2,24})$/i.test(z);var d=(z)=>/^(https?:\/\/)?([w]{3}\.|[w]{3}2\.)?([a-z\d]+\.)?([a-z\d]+\.[a-z]{2,}|localhost|[\d]+\.[\d]+\.[\d]+\.[\d]+)(\:[\d]+)?([\??\/?]+[\/;&a-z\d%_.~+=-]*)?(\#[\/;&a-z\d%_.~+=-]*)?$/gi.test(z);var E=(z)=>{if(J(z))return z==="";else if(X(z))return z.length==0;else if(Y(z))return Object.keys(z).length===0;return!0};var k=(z)=>typeof NodeList>"u"?!1:NodeList.prototype.isPrototypeOf(z);var g=(z)=>!!(z&&z.nodeType===1);var j=(z)=>typeof HTMLCollection>"u"?!1:HTMLCollection.prototype.isPrototypeOf(z);var O=(z,w,L)=>{let $=z(w);return Z($)?$:L};var b=(z,w,L,$)=>{let G=z(w);return G?V(L)?O(L,w,G):!0:V($)?O($,w,G):!1};var H=(z)=>(w,L,$)=>b(z,w,L,$);/*!!
+ * Power Panel pp-is <https://github.com/carlos-sweb/pp-is>
+ * @author Carlos Illesca
+ * @version 1.2.7 (2025/06/11 21:30 PM)
+ * Released under the MIT License
+ */var D={isArray:H(X),isBoolean:H(Z),isDate:H(R),isElement:H(g),isEmpty:H(E),isBlank:H(x),isFunction:H(V),isNull:H(I),isNumber:H(A),isObject:H(Y),isString:H(J),isUndefined:H(P),isNil:H(T),isEmail:H(C),isNaN:H(M),isRegExp:H(N),isUrl:H(d),isNodeList:H(k),isHTMLCollection:H(j),isPromise:H(U)};class B{current_hash=null;routes={};history=window.history;location=window.location;params=null;url_redirect=null;noFound=null;constructor(z={}){this.routes=z,window.addEventListener("hashchange",()=>this.run())}addRoute(z,w){this.routes[z]=w}removeRoute(z){delete this.routes[z]}setRedirect(z){this.url_redirect=z}setNoFound(z){D.isFunction(z,()=>{this.noFound=z})}start(z){D.isString(z,(w)=>this.location.hash=w,()=>this.location.hash=location.hash),this.run()}run(){let z=this.location.hash;if(["","#"].includes(z)){this.location.hash="/";return}var w=[];for(let L of Object.keys(this.routes)){let $=this.checkHash(z,L);if($.success&&typeof this.routes[L].controller==="function")w.push($)}if(w.length===0){if(D.isFunction(this.noFound,()=>this.noFound(this.location)),this.url_redirect)this.location.hash=this.url_redirect;return}if(w.length>0){let L=w.reduce(($,G)=>$.dinamic<G.dinamic?$:G);this.params=L.params,this.routes[L.pattern].controller(this.params),this.current_hash=L.pattern}}checkHash(z,w){let L=0;if(z.replace("#","")===w&&!w.includes(":"))return{success:!0,dinamic:0,pattern:w,params:{}};let $=/\/:(\w+)\((string|any|number)\)/g,G=[],W,Q=`^#${w}`;while((W=$.exec(w))!==null){G.push(W);let q="";switch(W[2]){case"number":q="/([0-9]+)";break;case"any":q="/([^/]+)";break;case"string":q="/([a-zA-Z-_]+)";break}Q=Q.replace(W[0],q),L++}Q=Q.replace(/\//g,"\\/")+"$";let F=new RegExp(Q).exec(z);if(F){let q={};return G.forEach((h,y)=>{q[h[1]]=F[y+1]}),{success:!0,dinamic:L,pattern:w,params:q}}return{success:!1,dinamic:0,pattern:"",params:{}}}}document.addEventListener("contextmenu",(z)=>z.preventDefault());var K=document.getElementById("route-info"),f=new B({"/":{controller:(z)=>{K.textContent=`Route: Home
+Params: ${JSON.stringify(z,null,2)}`}},"/about":{controller:(z)=>{K.textContent=`Route: About Us
+Params: ${JSON.stringify(z,null,2)}`}},"/users/:id(number)":{controller:(z)=>{K.textContent=`Route: User Profile
+ID: ${z.id}
+Params: ${JSON.stringify(z,null,2)}`}},"/products/:name(string)":{controller:(z)=>{K.textContent=`Route: Product Detail
+Name: ${z.name}
+Params: ${JSON.stringify(z,null,2)}`}},"/files/:dir(any)/:path(any)":{controller:(z)=>{K.textContent=`Route: File Viewer
+Dir: ${z.dir}
+Path: ${z.path}
+Params: ${JSON.stringify(z,null,2)}`}}});f.setNoFound((z)=>{K.textContent=`Route: 404 Not Found
+Location: ${z.hash}`});f.start();})();

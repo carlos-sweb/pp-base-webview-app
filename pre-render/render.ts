@@ -1,8 +1,23 @@
 //glib-compile-resources --target=src/example.c --generate-source --sourcedir=./ xml/www-gresource1.xml 
 //yq -o=json eval gresource.yaml > gresource.json
 //echo $(yq -P -o=json eval gresource.yaml) > gresource.json
-import { Glob } from "bun";
+import { Glob , $ } from "bun";
+await $`echo $(yq -P -o=json eval pre-render/gresource.yaml) > pre-render/gresource.json`
+await $`echo $(yq -P -o=json eval pre-render/font.yaml) > pre-render/font.json`
 import  dirs from "./gresource.json" with { type : "json"} 
+import  font from "./font.json" with { type : "json"} 
+const path = `./node_modules/${font.dir}`
+if( !await Bun.file(path).exists() ){
+  await $`if [ ! -d "./node_modules/$ADD_FONT" ]; then 
+   bun add $ADD_FONT
+  fi
+`.env({ADD_FONT: font.dir})
+}
+dirs.push({ prefix: "/font",path: `node_modules/${font.dir}/*.css` }) 
+dirs.push({prefix: "/font/files",path: `node_modules/${font.dir}/files/*.{woff,woff2}` }) 
+
+await Bun.write("www/css/font.css", `body{font-family:${font.fontFamily}}`);
+// ==============================================
 var xml2js = require('xml2js')
 var myXml = {gresources:{}}
 myXml["gresources"].gresource=[]
@@ -23,5 +38,20 @@ for(var i = 0; i < dirs.length ; i++){
     }      
   }
 }
-var builder = new xml2js.Builder();
+var builder = new xml2js.Builder()
 await Bun.write('xml/gresource.xml',builder.buildObject(myXml))
+
+await Bun.build({
+  entryPoints: ['www/js/index.js'],
+  bundle: true,  
+  minify: {
+    whitespace: true,
+    identifiers: true,
+    syntax: true,
+  },
+  format: 'iife',
+  outdir: 'www/dist',
+  drop: ['debugger','console'],
+})
+
+await $`cmake -S . -B build -G Ninja && ninja -C build  && ./build/base`

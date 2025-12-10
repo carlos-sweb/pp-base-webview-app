@@ -4,9 +4,13 @@
   "workspaces": {
     "": {
       "dependencies": {
+        "@fontsource-variable/arimo": "^5.2.8",
         "@fontsource-variable/dancing-script": "^5.2.8",
+        "@fontsource-variable/exo-2": "^5.2.8",
         "@fontsource-variable/jetbrains-mono": "^5.2.8",
+        "@fontsource-variable/maven-pro": "^5.2.10",
         "@fontsource-variable/roboto-mono": "^5.2.8",
+        "@fontsource/fira-mono": "^5.2.7",
         "@fontsource/jetbrains-mono": "4.5.10",
         "@fontsource/ubuntu": "^5.2.8",
         "xml2js": "^0.6.2",
@@ -14,11 +18,19 @@
     },
   },
   "packages": {
+    "@fontsource-variable/arimo": ["@fontsource-variable/arimo@5.2.8", "", {}, "sha512-1Na2/dZYm/fo8m0clAmIRRKLZsF0NuKzCdtQpI7yZN6bqNTgZzroTUYIN0KA4Qk9Iov6NA/zjRdsJLmc56dv/A=="],
+
     "@fontsource-variable/dancing-script": ["@fontsource-variable/dancing-script@5.2.8", "", {}, "sha512-K6Mkb5bn00WJTDsiKZ83p1hWZ3Q5U9YSH1nIp2ATknHi8ladevGGjIUQBs+LAgEr2y2W1XRV3VVuLsLVxH+G8g=="],
+
+    "@fontsource-variable/exo-2": ["@fontsource-variable/exo-2@5.2.8", "", {}, "sha512-P3k8XX+RE1E8QA4/EpR0wSmcvenHjYd7NUNbPNH8iUSA9mGDkPVxE6cxOsx7ksRKY1p0R1ExndDNTpzwwLgkVg=="],
 
     "@fontsource-variable/jetbrains-mono": ["@fontsource-variable/jetbrains-mono@5.2.8", "", {}, "sha512-WBA9elru6Jdp5df2mES55wuOO0WIrn3kpXnI4+W2ek5u3ZgLS9XS4gmIlcQhiZOWEKl95meYdvK7xI+ETLCq/Q=="],
 
+    "@fontsource-variable/maven-pro": ["@fontsource-variable/maven-pro@5.2.10", "", {}, "sha512-ixFo+eFM1Qmzt+6dVAxDgxuMxWTGEMBzEhwMjXias73oNN4+oVoZWROS5HHyqjU9awb+vF2K/hJ/EWi6OeulAQ=="],
+
     "@fontsource-variable/roboto-mono": ["@fontsource-variable/roboto-mono@5.2.8", "", {}, "sha512-6M2U3wGIUxYNKRrUoKls8BRRIPDA57T8J0agqwyDkiEHrLEEAqptsxcUl3eTm6tnRNEn6yEm4pCefvtnujebDA=="],
+
+    "@fontsource/fira-mono": ["@fontsource/fira-mono@5.2.7", "", {}, "sha512-wYrAn6i3nH6luqQBZxtWUpl4UTUvs9AEbEeZxksPMwIqyjRRaxHTNW3c2VfM50gabS2IS7pT8lVWS2USB4ukYA=="],
 
     "@fontsource/jetbrains-mono": ["@fontsource/jetbrains-mono@4.5.10", "", {}, "sha512-dylbkBmAWL0fkjDpDoDbQCwTQ/W3DzLtVXmwGyAyttfKliPGSP2WpAmmMFYp9NpqFMF7CLprFyzppe8u39Orkw=="],
 

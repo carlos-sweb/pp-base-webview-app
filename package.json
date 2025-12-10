@@ -1,8 +1,15 @@
 {
+  "scripts": {
+    "build": "bun run pre-render/render.ts"
+  },
   "dependencies": {
+    "@fontsource-variable/arimo": "^5.2.8",
     "@fontsource-variable/dancing-script": "^5.2.8",
+    "@fontsource-variable/exo-2": "^5.2.8",
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@fontsource-variable/maven-pro": "^5.2.10",
     "@fontsource-variable/roboto-mono": "^5.2.8",
+    "@fontsource/fira-mono": "^5.2.7",
     "@fontsource/jetbrains-mono": "4.5.10",
     "@fontsource/ubuntu": "^5.2.8",
     "xml2js": "^0.6.2"

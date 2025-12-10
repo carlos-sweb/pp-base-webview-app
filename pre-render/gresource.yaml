@@ -2,16 +2,12 @@
   path: www/css-utility/dist/*.css
 - prefix: /css-utility/dist/category
   path: www/css-utility/dist/category/*.css
-- prefix: /font/files
-  path: node_modules/@fontsource-variable/jetbrains-mono/files/*.{woff,woff2}
-- prefix: /font
-  path: node_modules/@fontsource-variable/jetbrains-mono/*.css
 - prefix: /js
   path:
   - node_modules/pp-is/dist/pp-is.min.js
   - node_modules/pp-events/dist/pp-events.min.js
   - node_modules/pp-router.js/pp-router.min.js  
-  - www/js/*.js
+  - www/dist/*.js
 - prefix: /
   path: www/index.html
 - prefix: /css
