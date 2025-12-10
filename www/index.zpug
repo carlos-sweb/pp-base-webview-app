@@ -1,9 +1,31 @@
 doctype html
 html(lang="en")
   head
-    title 
-  body
-    h1.greeting Hello 
-    p Age next year:     
-    p.status Active user    
+    meta(charset="utf-8")
+    meta(http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;")
+  meta(charset="UTF-8") 
+  meta(name="viewport" content="width=device-width, initial-scale=1.0") 
+  title Gtk Webview
+  link(rel="stylesheet" href="/css-utility/dist/normalize.min.css")
+  link(rel="stylesheet" href="/css/animate/animate-base.css")
+  link(rel="stylesheet" href="/css/animate/fade/fadeIn.css")
+  link(rel="stylesheet" href="/css-utility/dist/master.css")
+  link(rel="stylesheet" href="/font/index.css")
+  link(rel="stylesheet" href="/css/font.css")
+  link(rel="stylesheet" href="/css/style.css")
+  script(src="js/ready.js")
+  body.animated.fadeIn.slow
+    div.flex.flex-row.w-full.h-14.gray200.justify-start.items-center
+      span.text-2xl.text-blue900.font-bold.pl-5.cursor-pointer Navbar  
+    h1 pp-router Test Page
+    nav
+      a(href="#/") Home
+      a(href="#/about") About Us
+      a(href="#/users/123") User 123
+      a(href="#/products/apple-iphone-x") Product: Apple iPhone X
+      a(href="#/files/documents/report.pdf") File: Report PDF
+      a(href="#/nonexistent") Non-existent Page    
+    h2 Current Route:
+    pre(id="route-info") No route active yet.
+    script(src="js/index.js")
 		
