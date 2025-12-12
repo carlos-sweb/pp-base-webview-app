@@ -6,6 +6,27 @@ await $`echo $(yq -P -o=json eval pre-render/gresource.yaml) > pre-render/gresou
 await $`echo $(yq -P -o=json eval pre-render/font.yaml) > pre-render/font.json`
 import  dirs from "./gresource.json" with { type : "json"} 
 import  font from "./font.json" with { type : "json"} 
+
+
+//import { PugCompiler } from 'zig-pug';
+const zigpug = require('zig-pug')
+const compiler = new zigpug.PugCompiler()
+
+compiler.set('title', 'ppApp')
+compiler.set('links',[
+  '/css-utility/dist/normalize.min.css',
+  '/css/animate/animate-base.css',
+  '/css/animate/fade/fadeIn.css',
+  '/css-utility/dist/master.css',
+  '/font/index.css',
+  '/css/font.css',
+  '/css/style.css'
+])
+const html = compiler.compile(  await Bun.file('www/index.zpug').text()  );
+await Bun.write('www/index.html',html)
+
+
+
 const path = `./node_modules/${font.dir}`
 if( !await Bun.file(path).exists() ){
   await $`if [ ! -d "./node_modules/$ADD_FONT" ]; then 
@@ -17,6 +38,7 @@ dirs.push({ prefix: "/font",path: `node_modules/${font.dir}/*.css` })
 dirs.push({prefix: "/font/files",path: `node_modules/${font.dir}/files/*.{woff,woff2}` }) 
 
 await Bun.write("www/css/font.css", `body{font-family:${font.fontFamily}}`);
+
 // ==============================================
 var xml2js = require('xml2js')
 var myXml = {gresources:{}}

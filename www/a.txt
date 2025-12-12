@@ -1,0 +1,42 @@
+let checkResult={};
+        for(const [name,value] of Object.entries(self.data)){            
+            if(self.rules.hasOwnProperty(name)){              
+              let rules = self.rules[name].split("|")
+              for(let rule of rules){
+                let r = rule.split(":"),nameRule = r[0],
+                valueRule = isUndefined(r[1]) ? true : r[1]
+                /***------------------------------------------
+                 * NUMBER
+                 **/
+                if( nameRule === "number" ){
+                   console.log( isNaN(parseInt("hola")) )                 
+                   if(!isNumber(parseInt(value))){
+                     self.result.error[nameRule] = true;
+                   } 
+                   //console.log( valueRule ); 
+                   //console.log("valueRule isBollean",isBoolean(valueRule)); 
+                }
+                /***------------------------------------------
+                 * RANGE
+                 **/
+                if(nameRule==="range"){                    
+
+                    self.result.error[nameRule] = validateRange(
+                        valueRule.split(",").map((e)=>parseInt(e)), // [min,max]
+                        isNumber(value) ? value : parseInt(value) // value
+                    );
+                    
+                    //console.log(valueRule.split(",").map((i)=>parseInt(i)));
+                    //console.log("value is ..", parseInt(value) );
+                    //console.log("valueRule isRange",isBoolean(valueRule)); 
+                }
+                if(nameRule === "min"){
+
+                }
+                if(nameRule === "max"){
+
+                }
+              }
+            }
+        }
+        return checkResult

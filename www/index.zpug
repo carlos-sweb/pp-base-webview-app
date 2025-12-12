@@ -6,26 +6,20 @@ html(lang="en")
   meta(charset="UTF-8") 
   meta(name="viewport" content="width=device-width, initial-scale=1.0") 
   title Gtk Webview
-  link(rel="stylesheet" href="/css-utility/dist/normalize.min.css")
-  link(rel="stylesheet" href="/css/animate/animate-base.css")
-  link(rel="stylesheet" href="/css/animate/fade/fadeIn.css")
-  link(rel="stylesheet" href="/css-utility/dist/master.css")
-  link(rel="stylesheet" href="/font/index.css")
-  link(rel="stylesheet" href="/css/font.css")
-  link(rel="stylesheet" href="/css/style.css")
+  each link in links
+    link(rel="stylesheet" href=link)  
   script(src="js/ready.js")
   body.animated.fadeIn.slow
     div.flex.flex-row.w-full.h-14.gray200.justify-start.items-center
       span.text-2xl.text-blue900.font-bold.pl-5.cursor-pointer Navbar  
-    h1 pp-router Test Page
-    nav
-      a(href="#/") Home
-      a(href="#/about") About Us
-      a(href="#/users/123") User 123
-      a(href="#/products/apple-iphone-x") Product: Apple iPhone X
-      a(href="#/files/documents/report.pdf") File: Report PDF
-      a(href="#/nonexistent") Non-existent Page    
+    h1 pp-router #{title}
+    nav.flex.flex-row.gap-2
+      a.pl-2.pr-2(href="#/") Home
+      a.pl-2.pr-2(href="#/about") About Us
+      a.pl-2.pr-2(href="#/users/123") User 123
+      a.pl-2.pr-2(href="#/products/apple-iphone-x") Product: Apple iPhone X
+      a.pl-2.pr-2(href="#/files/documents/report.pdf") File: Report PDF
+      a.pl-2.pr-2(href="#/nonexistent") Non-existent Page    
     h2 Current Route:
     pre(id="route-info") No route active yet.
     script(src="js/index.js")
-		
