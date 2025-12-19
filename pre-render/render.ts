@@ -4,10 +4,8 @@
 import { Glob , $ } from "bun";
 await $`echo $(yq -P -o=json eval pre-render/gresource.yaml) > pre-render/gresource.json`
 await $`echo $(yq -P -o=json eval pre-render/font.yaml) > pre-render/font.json`
-import  dirs from "./gresource.json" with { type : "json"} 
-import  font from "./font.json" with { type : "json"} 
-
-
+import  dirs from "./gresource.json" with { type : "json"}
+import  font from "./font.json" with { type : "json"}
 //import { PugCompiler } from 'zig-pug';
 const zigpug = require('zig-pug')
 const compiler = new zigpug.PugCompiler()

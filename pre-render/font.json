@@ -1,1 +1,1 @@
-{ "name": "fira-mono", "dir": "@fontsource/fira-mono", "fontFamily": "font-family: 'Fira Mono', monospace;" }
+{ "name": "JetBrains", "dir": "@fontsource-variable/jetbrains-mono", "fontFamily": "'JetBrains Mono Variable', monospace;" }

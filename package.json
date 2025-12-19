@@ -13,6 +13,6 @@
     "@fontsource/jetbrains-mono": "4.5.10",
     "@fontsource/ubuntu": "^5.2.8",
     "xml2js": "^0.6.2",
-    "zig-pug": "^0.4.0"
+    "zig-pug": "^0.3.8"
   }
 }

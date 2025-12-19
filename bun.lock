@@ -14,7 +14,7 @@
         "@fontsource/jetbrains-mono": "4.5.10",
         "@fontsource/ubuntu": "^5.2.8",
         "xml2js": "^0.6.2",
-        "zig-pug": "^0.4.0",
+        "zig-pug": "^0.3.8",
       },
     },
   },
@@ -205,7 +205,7 @@
 
     "yallist": ["yallist@4.0.0", "", {}, "sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A=="],
 
-    "zig-pug": ["zig-pug@0.4.0", "", { "dependencies": { "node-gyp": "^10.0.0" } }, "sha512-aZGBYaPl0eUwLkBOY6zu4NapYRemFBSrAl8CfNC/GMyT2//WqbeRJflc7wQEuu/QXXe7E0KgIy+JBEjUWmb/hQ=="],
+    "zig-pug": ["zig-pug@0.3.8", "", { "dependencies": { "node-gyp": "^10.0.0" } }, "sha512-rxWfl/pGEf2wTsoUyjBzvbCVlAQm7hWZmuaRNbMmm1yd4mRwVJ9BMl5t8YiZYW8kRBeUOc8YChSYEfYIOoKglQ=="],
 
     "cacache/fs-minipass": ["fs-minipass@3.0.3", "", { "dependencies": { "minipass": "^7.0.3" } }, "sha512-XUBA9XClHbnJWSfBzjkm6RvPsyg3sryZt06BEQoXcF7EK/xpGaQYJgQKDJSUH5SGZ76Y7pFx1QBnXz09rU5Fbw=="],
 
