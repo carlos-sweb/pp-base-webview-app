@@ -22,4 +22,5 @@ html(lang="en")
       a.pl-2.pr-2(href="#/nonexistent") Non-existent Page    
     h2 Current Route:
     pre(id="route-info") No route active yet.
+    button(id="close") close
     script(src="js/index.js")    

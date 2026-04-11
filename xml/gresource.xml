@@ -28,11 +28,13 @@
     <file compressed="true" alias="index.html">www/index.html</file>
   </gresource>
   <gresource prefix="/css">
-    <file compressed="true" alias="style.css">www/css/style.css</file>
     <file compressed="true" alias="font.css">www/css/font.css</file>
+    <file compressed="true" alias="style.css">www/css/style.css</file>
   </gresource>
   <gresource prefix="/css/animate">
+    <file compressed="true" alias="animate-base.css">www/css/animate/animate-base.css</file>
     <file compressed="true" alias="animate.css">www/css/animate/animate.css</file>
+    <file compressed="true" alias="animate10_final.css">www/css/animate/animate10_final.css</file>
     <file compressed="true" alias="animate1_final.css">www/css/animate/animate1_final.css</file>
     <file compressed="true" alias="animate2_final.css">www/css/animate/animate2_final.css</file>
     <file compressed="true" alias="animate3_final.css">www/css/animate/animate3_final.css</file>
@@ -42,8 +44,6 @@
     <file compressed="true" alias="animate7_final.css">www/css/animate/animate7_final.css</file>
     <file compressed="true" alias="animate8_final.css">www/css/animate/animate8_final.css</file>
     <file compressed="true" alias="animate9_final.css">www/css/animate/animate9_final.css</file>
-    <file compressed="true" alias="animate10_final.css">www/css/animate/animate10_final.css</file>
-    <file compressed="true" alias="animate-base.css">www/css/animate/animate-base.css</file>
   </gresource>
   <gresource prefix="/css/animate/fade">
     <file compressed="true" alias="fadeIn.css">www/css/animate/fade/fadeIn.css</file>

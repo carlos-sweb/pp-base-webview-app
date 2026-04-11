@@ -1,6 +1,7 @@
 #include <gtk/gtk.h>
 #include <webkit/webkit.h>
 
+ 
 static void on_title_changed(WebKitWebView *web_view, GParamSpec *pspec, gpointer user_data) {
     GtkWindow *window = GTK_WINDOW(user_data);
     const gchar *title = webkit_web_view_get_title(web_view);
@@ -22,12 +23,15 @@ static void on_load_changed(WebKitWebView *web_view, WebKitLoadEvent load_event,
 
 static void on_ready( WebKitUserContentManager* self, 
                      JSCValue* value, gpointer user_data){
-
+    
     WebKitWebView *webview = WEBKIT_WEB_VIEW(user_data);
     if( !gtk_widget_get_visible(GTK_WIDGET(webview)) ){
       //g_print("Works\n");
       gtk_widget_set_visible(GTK_WIDGET(webview), TRUE);    
-    }    
+    }
+        
+    g_signal_handlers_disconnect_by_func(self,G_CALLBACK(on_ready),user_data);
+
 }
 
 static void on_ready_show( WebKitWebView * self){
@@ -143,17 +147,18 @@ static void activate(GtkApplication *app,gpointer user_data){
   webkit_settings_set_enable_write_console_messages_to_stdout(web_view_settings, TRUE);
   webkit_settings_set_javascript_can_access_clipboard(web_view_settings, TRUE);
   
-  g_signal_connect(
+    g_signal_connect(
     web_view_manager,
     "script-message-received::ready",
     G_CALLBACK(on_ready),web_view);
 
+    
     g_signal_connect(web_view,"ready-to-show",G_CALLBACK(on_ready_show),web_view);
 
-  gtk_window_set_child(GTK_WINDOW(window),GTK_WIDGET(web_view));
-  gtk_widget_set_visible(GTK_WIDGET(web_view),FALSE);
-  webkit_web_view_load_uri(web_view,"app://index.html");
-  gtk_window_present(GTK_WINDOW(window));
+    gtk_window_set_child(GTK_WINDOW(window),GTK_WIDGET(web_view));
+    gtk_widget_set_visible(GTK_WIDGET(web_view),FALSE);
+    webkit_web_view_load_uri(web_view,"app://index.html");
+    gtk_window_present(GTK_WINDOW(window));
 }
 
 

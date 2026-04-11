@@ -1,6 +1,13 @@
 document.addEventListener('contextmenu', (e) => e.preventDefault() );
 
 import ppRouter from 'pp-router.js'
+
+const close = document.getElementById("close")
+
+close.addEventListener("click",()=>{
+    window.webkit.messageHandlers.ready.postMessage("ready");	
+})
+
 const routeInfo = document.getElementById('route-info');
     const router = new ppRouter({
             '/': {
