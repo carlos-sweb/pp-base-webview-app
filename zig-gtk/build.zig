@@ -83,6 +83,10 @@ pub fn build(b: *std.Build) void {
         }),
     });
 
+    exe.linkSystemLibrary("gtk4");
+    exe.linkSystemLibrary("webkitgtk-6.0");
+    exe.linkLibC();
+
     // This declares intent for the executable to be installed into the
     // install prefix when running `zig build` (i.e. when executing the default
     // step). By default the install prefix is `zig-out/` but can be overridden

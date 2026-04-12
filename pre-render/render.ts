@@ -23,8 +23,6 @@ compiler.set('links',[
 const html = compiler.compile(  await Bun.file('www/index.zpug').text()  );
 await Bun.write('www/index.html',html)
 
-
-
 const path = `./node_modules/${font.dir}`
 if( !await Bun.file(path).exists() ){
   await $`if [ ! -d "./node_modules/$ADD_FONT" ]; then 

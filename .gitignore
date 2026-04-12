@@ -1,4 +1,4 @@
 build/
 www/node_modules/
 node_modules/
-zig-gtk/
+zig-gtk/.zig-cache
