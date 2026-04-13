@@ -4,8 +4,8 @@ import ppRouter from 'pp-router.js'
 
 const close = document.getElementById("close")
 
-close.addEventListener("click",()=>{
-    window.webkit.messageHandlers.ready.postMessage("ready");	
+close.addEventListener("click",()=>{    
+    window.webkit.messageHandlers.ready.postMessage("close");	
 })
 
 const routeInfo = document.getElementById('route-info');
@@ -17,21 +17,25 @@ const routeInfo = document.getElementById('route-info');
             },
             '/about': {
                 controller: (params) => {
+                    document.title = "About";
                     routeInfo.textContent = `Route: About Us\nParams: ${JSON.stringify(params, null, 2)}`;
                 }
             },
             '/users/:id(number)': {
                 controller: (params) => {
+                    document.title = "Users";
                     routeInfo.textContent = `Route: User Profile\nID: ${params.id}\nParams: ${JSON.stringify(params, null, 2)}`;
                 }
             },
             '/products/:name(string)': {
                 controller: (params) => {
+                    document.title = "Productos";
                     routeInfo.textContent = `Route: Product Detail\nName: ${params.name}\nParams: ${JSON.stringify(params, null, 2)}`;
                 }
             },
             '/files/:dir(any)/:path(any)': {
                 controller: (params) => {
+                    document.title = "No Found";
                     routeInfo.textContent = `Route: File Viewer\nDir: ${params.dir}\nPath: ${params.path}\nParams: ${JSON.stringify(params, null, 2)}`;
                 }
             }

@@ -1,6 +1,17 @@
 #include <gtk/gtk.h>
 #include <webkit/webkit.h>
 
+
+
+
+static void close_app( WebKitUserContentManager* self, 
+                     JSCValue* value, gpointer user_data){
+    
+
+      g_print("Closeseses\n");
+
+}
+
  
 static void on_title_changed(WebKitWebView *web_view, GParamSpec *pspec, gpointer user_data) {
     GtkWindow *window = GTK_WINDOW(user_data);
@@ -19,14 +30,14 @@ static void on_load_changed(WebKitWebView *web_view, WebKitLoadEvent load_event,
             g_print("Load finished. No title available.\n");
         }
     }
-}
 
+}
 static void on_ready( WebKitUserContentManager* self, 
                      JSCValue* value, gpointer user_data){
     
     WebKitWebView *webview = WEBKIT_WEB_VIEW(user_data);
     if( !gtk_widget_get_visible(GTK_WIDGET(webview)) ){
-      //g_print("Works\n");
+      g_print("Works\n");
       gtk_widget_set_visible(GTK_WIDGET(webview), TRUE);    
     }
         
@@ -151,6 +162,13 @@ static void activate(GtkApplication *app,gpointer user_data){
     web_view_manager,
     "script-message-received::ready",
     G_CALLBACK(on_ready),web_view);
+
+    g_signal_connect(
+    web_view_manager,
+    "script-message-received::close",
+    G_CALLBACK(close_app),web_view);
+
+    
 
     
     g_signal_connect(web_view,"ready-to-show",G_CALLBACK(on_ready_show),web_view);
