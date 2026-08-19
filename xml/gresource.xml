@@ -10,6 +10,7 @@
     <file compressed="true" alias="favicon-64.png">dist-playground/favicon-64.png</file>
     <file compressed="true" alias="llms.txt">dist-playground/llms.txt</file>
     <file compressed="true" alias="styles.css">dist-playground/styles.css</file>
+    <file compressed="true" alias="style.css">dist-playground/style.css</file>
   </gresource>
   <gresource prefix="/assets/avatar">
     <file compressed="true" alias="avatar7-M2KCXI24.jpg">dist-playground/assets/avatar/avatar7-M2KCXI24.jpg</file>

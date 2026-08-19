@@ -2,14 +2,16 @@
 #include <webkit/webkit.h>
 
 
+const gchar *js_code_ready = "document.addEventListener(\"DOMContentLoaded\",function(){window.webkit.messageHandlers.ready.postMessage(\"ready\") })";
 
+gboolean on_context_menu(WebKitWebView *web_view, 
+    WebKitContextMenu *context_menu, GdkEvent *event, WebKitHitTestResult *hit_test_result, gpointer user_data) {
+    // Retornar TRUE bloquea la apertura del menú
+    return TRUE; 
+}
 
-static void close_app( WebKitUserContentManager* self, 
-                     JSCValue* value, gpointer user_data){
-    
-
+static void close_app( WebKitUserContentManager* self,  JSCValue* value, gpointer user_data){    
       g_print("Closeseses\n");
-
 }
 
  
@@ -112,9 +114,21 @@ static void activate(GtkApplication *app,gpointer user_data){
   gtk_window_maximize(GTK_WINDOW(window));  
   gtk_window_set_title(GTK_WINDOW(window),"");
   gtk_window_set_default_size(GTK_WINDOW(window),967,600);
+
+
+  WebKitUserScript *script = webkit_user_script_new(
+        js_code_ready,
+        WEBKIT_USER_CONTENT_INJECT_ALL_FRAMES,       // Aplicar a todos los frames (o TOP_FRAME)
+        WEBKIT_USER_SCRIPT_INJECT_AT_DOCUMENT_START, // Inyectar al iniciar la carga
+        NULL,                                         // Lista blanca de URLs (NULL = todas)
+        NULL                                          // Lista negra de URLs
+    );
   
   // create webview
-  web_view_manager = webkit_user_content_manager_new();    
+  web_view_manager = webkit_user_content_manager_new();   
+  
+  webkit_user_content_manager_add_script(web_view_manager, script);
+  webkit_user_script_unref(script);
   
   webkit_user_content_manager_register_script_message_handler( 
     web_view_manager,
@@ -169,6 +183,8 @@ static void activate(GtkApplication *app,gpointer user_data){
     G_CALLBACK(close_app),web_view);
 
     g_signal_connect(web_view,"ready-to-show",G_CALLBACK(on_ready_show),web_view);
+
+    g_signal_connect(web_view, "context-menu", G_CALLBACK(on_context_menu), NULL);
 
     gtk_window_set_child(GTK_WINDOW(window),GTK_WIDGET(web_view));
     gtk_widget_set_visible(GTK_WIDGET(web_view),FALSE);
