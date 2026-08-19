@@ -1,4 +1,38 @@
-build/
-www/node_modules/
+# ─── Dependencies ───
 node_modules/
-zig-gtk/.zig-cache
+www/node_modules/
+
+# ─── Zig build cache ───
+.zig-cache/
+
+# ─── Zig build output ───
+zig-out/
+
+# ─── CMake build output ───
+build/
+
+# ─── Example / playground output ───
+dist-playground/
+
+# ─── Downloaded sources (not source code) ───
+webkitgtk-*.tar.xz
+
+# ─── Lock files (project uses Bun) ───
+bun.lock
+www/bun.lock
+yarn.lock
+www/yarn.lock
+
+# ─── OpenCode session data ───
+.omo/
+
+# ─── IDE / Editor ───
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS artifacts ───
+.DS_Store
+Thumbs.db
