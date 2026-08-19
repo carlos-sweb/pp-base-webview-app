@@ -1,0 +1,18 @@
+- prefix: /css-utility/dist
+  path: www/css-utility/dist/*.css
+- prefix: /css-utility/dist/category
+  path: www/css-utility/dist/category/*.css
+- prefix: /js
+  path:
+  - node_modules/pp-is/dist/pp-is.min.js
+  - node_modules/pp-events/dist/pp-events.min.js
+  - node_modules/pp-router.js/pp-router.min.js  
+  - www/dist/*.js
+- prefix: /
+  path: www/index.html
+- prefix: /css
+  path: www/css/*.css
+- prefix: /css/animate
+  path: www/css/animate/*.css
+- prefix: /css/animate/fade
+  path: www/css/animate/fade/*.css

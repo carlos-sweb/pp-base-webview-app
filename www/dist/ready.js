@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded",function(){
-	
-	window.webkit.messageHandlers.ready.postMessage("ready");
-		
+document.addEventListener("DOMContentLoaded",function(){	
+	window.webkit.messageHandlers.ready.postMessage("ready");		
 })

@@ -53,22 +53,20 @@ static void custom_scheme_handler(WebKitURISchemeRequest *request, gpointer user
     gsize size;
     GInputStream *stream;
     const gchar *mime_type;
-    const void *contents;
-    const gchar *uri = webkit_uri_scheme_request_get_uri(request);  // ej: "app://index.html"
-    const gchar * uri_base = "app://index.html";
-    const gchar *path = g_str_equal(uri,uri_base) ?  uri + strlen("app://") : uri + strlen("app://index.html/");                  
-    // Ruta en GResource
+    const gchar *uri = webkit_uri_scheme_request_get_uri(request);
+    const gchar *uri_base = "app://index.html";
+    const gchar *path = g_str_equal(uri, uri_base)
+        ? uri + strlen("app://")
+        : uri + strlen("app://index.html/");
+
     gchar *resource_path = g_strdup_printf("/%s", path);
+    g_print("url : %s\n", resource_path);
 
-    g_print("url : %s\n",resource_path);
-    
     GBytes *data = g_resources_lookup_data(resource_path, G_RESOURCE_LOOKUP_FLAGS_NONE, NULL);
-
     g_free(resource_path);
 
     if (!data) {
-      g_print("404 %s\n",path);
-        // Si no lo encuentra, devuelve error 404
+        g_print("404 %s\n", path);
         webkit_uri_scheme_request_finish_error(
             request,
             g_error_new_literal(g_quark_from_static_string("app"), 0, "Archivo no encontrado")
@@ -76,29 +74,31 @@ static void custom_scheme_handler(WebKitURISchemeRequest *request, gpointer user
         return;
     }
 
-    
-    contents = g_bytes_get_data(data, &size);
+    size = g_bytes_get_size(data);
 
-    // MIME TYPE básico (mejor si lo detectas bien)
+    // MIME type
     mime_type = "text/html";
-    if (g_str_has_suffix(uri, ".html")) mime_type        = "text/html";
-    else if (g_str_has_suffix(uri, ".css" )) mime_type   = "text/css";
-    else if (g_str_has_suffix(uri, ".js" )) mime_type    = "application/javascript";
-    else if (g_str_has_suffix(uri, ".svg" )) mime_type   = "image/svg+xml";
-    else if (g_str_has_suffix(uri, ".webp" )) mime_type  = "image/webp";
-    else if (g_str_has_suffix(uri, ".png" )) mime_type   = "image/png";
-    else if (g_str_has_suffix(uri, ".jpg" )) mime_type   = "image/jpeg";
-    else if (g_str_has_suffix(uri, ".jpeg" )) mime_type  = "image/jpeg";
-    else if (g_str_has_suffix(uri, ".woff" )) mime_type  = "font/woff";
-    else if (g_str_has_suffix(uri, ".woff2" )) mime_type = "font/woff2";
-    else if (g_str_has_suffix(uri, ".ttf" )) mime_type   = "font/ttf";
-    else if (g_str_has_suffix(uri, ".eot" )) mime_type   = "font/eot";
+    if (g_str_has_suffix(uri, ".html"))  mime_type = "text/html";
+    else if (g_str_has_suffix(uri, ".css"))  mime_type = "text/css";
+    else if (g_str_has_suffix(uri, ".js"))   mime_type = "application/javascript";
+    else if (g_str_has_suffix(uri, ".svg"))  mime_type = "image/svg+xml";
+    else if (g_str_has_suffix(uri, ".webp")) mime_type = "image/webp";
+    else if (g_str_has_suffix(uri, ".png"))  mime_type = "image/png";
+    else if (g_str_has_suffix(uri, ".jpg"))  mime_type = "image/jpeg";
+    else if (g_str_has_suffix(uri, ".jpeg")) mime_type = "image/jpeg";
+    else if (g_str_has_suffix(uri, ".woff")) mime_type = "font/woff";
+    else if (g_str_has_suffix(uri, ".woff2")) mime_type = "font/woff2";
+    else if (g_str_has_suffix(uri, ".ttf"))  mime_type = "font/ttf";
+    else if (g_str_has_suffix(uri, ".eot"))  mime_type = "font/eot";
 
-    stream = g_memory_input_stream_new_from_data(contents, size, NULL);
+    g_print("  -> serving %s (%zu bytes, mime: %s)\n", uri, size, mime_type);
+
+    // g_memory_input_stream_new_from_bytes takes ownership of the GBytes.
+    // WebKit takes ownership of the stream via webkit_uri_scheme_request_finish.
+    // No manual unref needed for either.
+    stream = g_memory_input_stream_new_from_bytes(data);
     webkit_uri_scheme_request_finish(request, stream, size, mime_type);
-
     g_object_unref(stream);
-    g_bytes_unref(data);
 }
 
 static void activate(GtkApplication *app,gpointer user_data){
@@ -153,7 +153,7 @@ static void activate(GtkApplication *app,gpointer user_data){
 
 
   WebKitWebInspector *inspector = webkit_web_view_get_inspector(web_view);
-  //webkit_web_inspector_show(inspector);
+  webkit_web_inspector_show(inspector);
 
   webkit_settings_set_enable_write_console_messages_to_stdout(web_view_settings, TRUE);
   webkit_settings_set_javascript_can_access_clipboard(web_view_settings, TRUE);
@@ -168,9 +168,6 @@ static void activate(GtkApplication *app,gpointer user_data){
     "script-message-received::close",
     G_CALLBACK(close_app),web_view);
 
-    
-
-    
     g_signal_connect(web_view,"ready-to-show",G_CALLBACK(on_ready_show),web_view);
 
     gtk_window_set_child(GTK_WINDOW(window),GTK_WIDGET(web_view));

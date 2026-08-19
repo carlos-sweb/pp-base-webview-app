@@ -7,7 +7,7 @@
     "@fontsource-variable/dancing-script": "^5.2.8",
     "@fontsource-variable/exo-2": "^5.2.8",
     "@fontsource-variable/inter": "^5.2.8",
-    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
     "@fontsource-variable/maven-pro": "^5.2.10",
     "@fontsource-variable/playfair-display": "^5.2.8",
     "@fontsource-variable/roboto-mono": "^5.2.8",
@@ -16,7 +16,10 @@
     "@fontsource/jetbrains-mono": "4.5.10",
     "@fontsource/kanit": "^5.2.8",
     "@fontsource/ubuntu": "^5.2.8",
+    "lodash": "^4.18.1",
+    "pp-router.js": "^3.0.1",
+    "voca": "^1.4.1",
     "xml2js": "^0.6.2",
-    "zig-pug": "^0.3.8"
+    "zig-pug": "^4.1.3"
   }
 }

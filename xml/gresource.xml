@@ -1,70 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gresources>
-  <gresource prefix="/css-utility/dist">
-    <file compressed="true" alias="master.css">www/css-utility/dist/master.css</file>
-    <file compressed="true" alias="normalize.min.css">www/css-utility/dist/normalize.min.css</file>
-  </gresource>
-  <gresource prefix="/css-utility/dist/category">
-    <file compressed="true" alias="alignment.min.css">www/css-utility/dist/category/alignment.min.css</file>
-    <file compressed="true" alias="backgrounds.min.css">www/css-utility/dist/category/backgrounds.min.css</file>
-    <file compressed="true" alias="bgcolor.min.css">www/css-utility/dist/category/bgcolor.min.css</file>
-    <file compressed="true" alias="border.min.css">www/css-utility/dist/category/border.min.css</file>
-    <file compressed="true" alias="effects.min.css">www/css-utility/dist/category/effects.min.css</file>
-    <file compressed="true" alias="flexbox.min.css">www/css-utility/dist/category/flexbox.min.css</file>
-    <file compressed="true" alias="grid.min.css">www/css-utility/dist/category/grid.min.css</file>
-    <file compressed="true" alias="interactivity.min.css">www/css-utility/dist/category/interactivity.min.css</file>
-    <file compressed="true" alias="layout.min.css">www/css-utility/dist/category/layout.min.css</file>
-    <file compressed="true" alias="sizing.min.css">www/css-utility/dist/category/sizing.min.css</file>
-    <file compressed="true" alias="spacing.min.css">www/css-utility/dist/category/spacing.min.css</file>
-    <file compressed="true" alias="tables.min.css">www/css-utility/dist/category/tables.min.css</file>
-    <file compressed="true" alias="transforms.min.css">www/css-utility/dist/category/transforms.min.css</file>
-    <file compressed="true" alias="typography.min.css">www/css-utility/dist/category/typography.min.css</file>
-  </gresource>
-  <gresource prefix="/js">
-    <file compressed="true" alias="index.js">www/dist/index.js</file>
-    <file compressed="true" alias="ready.js">www/dist/ready.js</file>
-  </gresource>
   <gresource prefix="/">
-    <file compressed="true" alias="index.html">www/index.html</file>
+    <file compressed="true" alias="main.js">dist-playground/main.js</file>
+    <file compressed="true" alias="favicon-64-SG2PBRFK.png">dist-playground/favicon-64-SG2PBRFK.png</file>
+    <file compressed="true" alias="index.html">dist-playground/index.html</file>
+    <file compressed="true" alias="favicon.ico">dist-playground/favicon.ico</file>
+    <file compressed="true" alias="favicon-16.png">dist-playground/favicon-16.png</file>
+    <file compressed="true" alias="favicon-32.png">dist-playground/favicon-32.png</file>
+    <file compressed="true" alias="favicon-64.png">dist-playground/favicon-64.png</file>
+    <file compressed="true" alias="llms.txt">dist-playground/llms.txt</file>
+    <file compressed="true" alias="styles.css">dist-playground/styles.css</file>
   </gresource>
-  <gresource prefix="/css">
-    <file compressed="true" alias="font.css">www/css/font.css</file>
-    <file compressed="true" alias="style.css">www/css/style.css</file>
+  <gresource prefix="/assets/avatar">
+    <file compressed="true" alias="avatar7-M2KCXI24.jpg">dist-playground/assets/avatar/avatar7-M2KCXI24.jpg</file>
+    <file compressed="true" alias="avatar8-F47AY6US.jpg">dist-playground/assets/avatar/avatar8-F47AY6US.jpg</file>
+    <file compressed="true" alias="avatar6-XS3ZPRQU.jpg">dist-playground/assets/avatar/avatar6-XS3ZPRQU.jpg</file>
+    <file compressed="true" alias="avatar4-34QKIWLC.jpg">dist-playground/assets/avatar/avatar4-34QKIWLC.jpg</file>
+    <file compressed="true" alias="avatar3-ZZZNCVD6.jpg">dist-playground/assets/avatar/avatar3-ZZZNCVD6.jpg</file>
+    <file compressed="true" alias="avatar9-3Y4S6KJH.jpg">dist-playground/assets/avatar/avatar9-3Y4S6KJH.jpg</file>
+    <file compressed="true" alias="avatar1-2QQL4AYQ.jpg">dist-playground/assets/avatar/avatar1-2QQL4AYQ.jpg</file>
+    <file compressed="true" alias="avatar5-EHFWELUF.jpg">dist-playground/assets/avatar/avatar5-EHFWELUF.jpg</file>
+    <file compressed="true" alias="avatar2-3R4OSSRI.jpg">dist-playground/assets/avatar/avatar2-3R4OSSRI.jpg</file>
   </gresource>
-  <gresource prefix="/css/animate">
-    <file compressed="true" alias="animate-base.css">www/css/animate/animate-base.css</file>
-    <file compressed="true" alias="animate.css">www/css/animate/animate.css</file>
-    <file compressed="true" alias="animate10_final.css">www/css/animate/animate10_final.css</file>
-    <file compressed="true" alias="animate1_final.css">www/css/animate/animate1_final.css</file>
-    <file compressed="true" alias="animate2_final.css">www/css/animate/animate2_final.css</file>
-    <file compressed="true" alias="animate3_final.css">www/css/animate/animate3_final.css</file>
-    <file compressed="true" alias="animate4_final.css">www/css/animate/animate4_final.css</file>
-    <file compressed="true" alias="animate5_final.css">www/css/animate/animate5_final.css</file>
-    <file compressed="true" alias="animate6_final.css">www/css/animate/animate6_final.css</file>
-    <file compressed="true" alias="animate7_final.css">www/css/animate/animate7_final.css</file>
-    <file compressed="true" alias="animate8_final.css">www/css/animate/animate8_final.css</file>
-    <file compressed="true" alias="animate9_final.css">www/css/animate/animate9_final.css</file>
+  <gresource prefix="/assets/card">
+    <file compressed="true" alias="card2-TCNTMSZA.jpg">dist-playground/assets/card/card2-TCNTMSZA.jpg</file>
+    <file compressed="true" alias="card3-V4AANXQD.jpg">dist-playground/assets/card/card3-V4AANXQD.jpg</file>
+    <file compressed="true" alias="card1-J6H7VIT3.jpg">dist-playground/assets/card/card1-J6H7VIT3.jpg</file>
   </gresource>
-  <gresource prefix="/css/animate/fade">
-    <file compressed="true" alias="fadeIn.css">www/css/animate/fade/fadeIn.css</file>
-  </gresource>
-  <gresource prefix="/font">
-    <file compressed="true" alias="index.css">node_modules/@fontsource-variable/jetbrains-mono/index.css</file>
-    <file compressed="true" alias="wght-italic.css">node_modules/@fontsource-variable/jetbrains-mono/wght-italic.css</file>
-    <file compressed="true" alias="wght.css">node_modules/@fontsource-variable/jetbrains-mono/wght.css</file>
-  </gresource>
-  <gresource prefix="/font/files">
-    <file compressed="true" alias="jetbrains-mono-cyrillic-ext-wght-italic.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-cyrillic-ext-wght-italic.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-cyrillic-ext-wght-normal.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-cyrillic-ext-wght-normal.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-cyrillic-wght-italic.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-cyrillic-wght-italic.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-cyrillic-wght-normal.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-cyrillic-wght-normal.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-greek-wght-italic.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-greek-wght-italic.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-greek-wght-normal.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-greek-wght-normal.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-latin-ext-wght-italic.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-ext-wght-italic.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-latin-ext-wght-normal.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-ext-wght-normal.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-latin-wght-italic.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-italic.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-latin-wght-normal.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-vietnamese-wght-italic.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-vietnamese-wght-italic.woff2</file>
-    <file compressed="true" alias="jetbrains-mono-vietnamese-wght-normal.woff2">node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-vietnamese-wght-normal.woff2</file>
+  <gresource prefix="/fonts">
+    <file compressed="true" alias="d31d6e1e.woff2">dist-playground/fonts/d31d6e1e.woff2</file>
+    <file compressed="true" alias="ee08b691.woff">dist-playground/fonts/ee08b691.woff</file>
+    <file compressed="true" alias="dcd043fb.woff2">dist-playground/fonts/dcd043fb.woff2</file>
+    <file compressed="true" alias="1ac8a3ab.woff">dist-playground/fonts/1ac8a3ab.woff</file>
+    <file compressed="true" alias="489e83e9.woff2">dist-playground/fonts/489e83e9.woff2</file>
+    <file compressed="true" alias="e150b162.woff2">dist-playground/fonts/e150b162.woff2</file>
+    <file compressed="true" alias="16c6326f.woff2">dist-playground/fonts/16c6326f.woff2</file>
+    <file compressed="true" alias="aeda4aa0.woff">dist-playground/fonts/aeda4aa0.woff</file>
+    <file compressed="true" alias="fa40bd5c.woff">dist-playground/fonts/fa40bd5c.woff</file>
+    <file compressed="true" alias="6ede1ce5.woff">dist-playground/fonts/6ede1ce5.woff</file>
+    <file compressed="true" alias="8e5181f3.woff2">dist-playground/fonts/8e5181f3.woff2</file>
+    <file compressed="true" alias="477def2b.woff2">dist-playground/fonts/477def2b.woff2</file>
+    <file compressed="true" alias="2d0afb4d.woff">dist-playground/fonts/2d0afb4d.woff</file>
+    <file compressed="true" alias="683a31ac.woff">dist-playground/fonts/683a31ac.woff</file>
+    <file compressed="true" alias="dacd08c8.woff2">dist-playground/fonts/dacd08c8.woff2</file>
+    <file compressed="true" alias="18799a98.woff">dist-playground/fonts/18799a98.woff</file>
+    <file compressed="true" alias="6a94a323.woff2">dist-playground/fonts/6a94a323.woff2</file>
+    <file compressed="true" alias="1bc12650.woff2">dist-playground/fonts/1bc12650.woff2</file>
+    <file compressed="true" alias="88e20821.woff2">dist-playground/fonts/88e20821.woff2</file>
+    <file compressed="true" alias="ce6fa945.woff2">dist-playground/fonts/ce6fa945.woff2</file>
+    <file compressed="true" alias="8affa1bf.woff">dist-playground/fonts/8affa1bf.woff</file>
+    <file compressed="true" alias="a0567182.woff">dist-playground/fonts/a0567182.woff</file>
+    <file compressed="true" alias="fe11139b.woff">dist-playground/fonts/fe11139b.woff</file>
+    <file compressed="true" alias="f70cdd68.woff">dist-playground/fonts/f70cdd68.woff</file>
+    <file compressed="true" alias="fa4206e3.woff2">dist-playground/fonts/fa4206e3.woff2</file>
+    <file compressed="true" alias="88f2346c.woff2">dist-playground/fonts/88f2346c.woff2</file>
+    <file compressed="true" alias="44de22bc.woff2">dist-playground/fonts/44de22bc.woff2</file>
+    <file compressed="true" alias="a8385e63.woff">dist-playground/fonts/a8385e63.woff</file>
+    <file compressed="true" alias="46300a0e.woff">dist-playground/fonts/46300a0e.woff</file>
+    <file compressed="true" alias="15eca41c.woff">dist-playground/fonts/15eca41c.woff</file>
+    <file compressed="true" alias="32852019.woff2">dist-playground/fonts/32852019.woff2</file>
+    <file compressed="true" alias="9f00da4b.woff2">dist-playground/fonts/9f00da4b.woff2</file>
+    <file compressed="true" alias="a2d120f2.woff2">dist-playground/fonts/a2d120f2.woff2</file>
+    <file compressed="true" alias="e91b8bc5.woff">dist-playground/fonts/e91b8bc5.woff</file>
+    <file compressed="true" alias="a631796.woff2">dist-playground/fonts/a631796.woff2</file>
+    <file compressed="true" alias="74d8706f.woff2">dist-playground/fonts/74d8706f.woff2</file>
+    <file compressed="true" alias="32adbd5a.woff2">dist-playground/fonts/32adbd5a.woff2</file>
+    <file compressed="true" alias="e1f84f32.woff2">dist-playground/fonts/e1f84f32.woff2</file>
+    <file compressed="true" alias="863b4e74.woff">dist-playground/fonts/863b4e74.woff</file>
+    <file compressed="true" alias="db5b435f.woff">dist-playground/fonts/db5b435f.woff</file>
+    <file compressed="true" alias="62e074d4.woff">dist-playground/fonts/62e074d4.woff</file>
+    <file compressed="true" alias="b69e7eea.woff2">dist-playground/fonts/b69e7eea.woff2</file>
+    <file compressed="true" alias="9ad221dc.woff2">dist-playground/fonts/9ad221dc.woff2</file>
+    <file compressed="true" alias="9b994b4d.woff2">dist-playground/fonts/9b994b4d.woff2</file>
+    <file compressed="true" alias="7bd5572c.woff">dist-playground/fonts/7bd5572c.woff</file>
+    <file compressed="true" alias="1c8fb007.woff">dist-playground/fonts/1c8fb007.woff</file>
+    <file compressed="true" alias="9209d9e9.woff">dist-playground/fonts/9209d9e9.woff</file>
+    <file compressed="true" alias="27978215.woff">dist-playground/fonts/27978215.woff</file>
+    <file compressed="true" alias="f6ab8309.woff2">dist-playground/fonts/f6ab8309.woff2</file>
+    <file compressed="true" alias="d2e9ef4.woff">dist-playground/fonts/d2e9ef4.woff</file>
+    <file compressed="true" alias="53e0cf1f.woff">dist-playground/fonts/53e0cf1f.woff</file>
+    <file compressed="true" alias="f6255a6.woff2">dist-playground/fonts/f6255a6.woff2</file>
+    <file compressed="true" alias="f26ad72e.woff">dist-playground/fonts/f26ad72e.woff</file>
+    <file compressed="true" alias="480fe003.woff">dist-playground/fonts/480fe003.woff</file>
+    <file compressed="true" alias="e6446c36.woff2">dist-playground/fonts/e6446c36.woff2</file>
+    <file compressed="true" alias="52295cf6.woff">dist-playground/fonts/52295cf6.woff</file>
+    <file compressed="true" alias="8b8740ab.woff2">dist-playground/fonts/8b8740ab.woff2</file>
+    <file compressed="true" alias="c1d6f4da.woff">dist-playground/fonts/c1d6f4da.woff</file>
+    <file compressed="true" alias="abb7fe34.woff2">dist-playground/fonts/abb7fe34.woff2</file>
+    <file compressed="true" alias="779c2346.woff">dist-playground/fonts/779c2346.woff</file>
   </gresource>
 </gresources>
